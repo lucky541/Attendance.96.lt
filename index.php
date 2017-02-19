@@ -21,7 +21,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Welcome to AMS</title>
+  <title>Welcome To AMS</title>
 
    <meta name="viewport" content="width=device-width,initial-scale=1"/>
 
@@ -241,7 +241,7 @@ onload="myFunction()"
                                <center>
                                  <hr>
                                  <div id ="tagline" class="lead white-text fadeInLeft " data-wow-delay="0.4s" >
-                                    &lt!-- The Better Towards The Attendance System --&gt
+                                    The Better Towards The Attendance System.
                                 </div> 
                                </center> </div>
                                  
