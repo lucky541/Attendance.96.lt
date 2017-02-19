@@ -591,6 +591,10 @@ onload="myFunction()"
                        
                         <a href="https://www.facebook.com/lucky.barkane" target="_blank" class="btn btn-primary">
                        <i class="fa fa-facebook " ></i> </a>
+
+                         <a href=" https://in.linkedin.com/in/lucky-barkane-793820129" target="_blank" class="btn btn-info">
+                       <i class="fa fa-linkedin " ></i> </a>
+                      
                        <br/>
              <br/>
                       <!--
