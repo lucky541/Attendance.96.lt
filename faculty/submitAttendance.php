@@ -35,7 +35,17 @@ $subject_name = $_SESSION['subject_code'];
     // to check on what date attendance is mark
     // if the date varies then only increment the classes taken
     if( $date!=$fetched_date)
-      {
+      {  
+
+       // reset the edit flag if set
+           $resultSet=$dbConnection->query("SELECT * FROM {$subject_name} WHERE edit=1 AND section='{$section}'");
+    while($row=$resultSet->fetch_object()){
+       $attendance=$row->attendance+1;
+       $dbConnection->query("UPDATE {$subject_name} SET attendance={$attendance},edit=0 WHERE edit=1 AND section='{$section}'");
+    }
+
+
+
           $classesTaken+=1;
           $upadeClassHappen = "UPDATE subject_table SET {$sectionName} = {$classesTaken}, {$section_date} = '{$date}' WHERE   tought_by = '{$enroll_no}' AND subject_code ='{$subject_name}'";  
           $dbConnection->query($upadeClassHappen);     
@@ -57,17 +67,18 @@ $subject_name = $_SESSION['subject_code'];
 
                             /*if edit is not zero then add the edit to attendance and then mark the current attendance in the edit filed for providing the edit attendance functionalities */
                             $attendance = $row->attendance; $editAttendance = $row->edit;
-                            if($editAttendance)
+                            /*if($editAttendance==1)
                               {
-                                $attendance =  $attendance+$editAttendance;
-                                $updateQuery = "UPDATE {$subject_name} SET attendance = {$attendance},edit=0 WHERE enroll_no = '{$enroll_no}'";
+                                $attendance =  $attendance+1;
+                                $updateQuery = "UPDATE {$subject_name} SET attendance = {$attendance},edit= 0 WHERE enroll_no = '{$enroll_no}'";
                                 $dbConnection->query($updateQuery);
                               }
-
-                            $updateQuery = "UPDATE {$subject_name} SET edit = 1 WHERE enroll_no = '{$enroll_no}'";
+                             else{*/
+                               $updateQuery = "UPDATE {$subject_name} SET edit = 1 WHERE enroll_no = '{$enroll_no}'";
                             $dbConnection->query($updateQuery);
                            
-                         
+                           //  }
+                           
                      }
               $num+=1;
             }        
@@ -79,6 +90,7 @@ $subject_name = $_SESSION['subject_code'];
         }                      
 
      }
+
         
  header('Location: TakeAttendance.php');
 ?>

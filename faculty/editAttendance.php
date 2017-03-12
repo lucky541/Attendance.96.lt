@@ -85,7 +85,7 @@
   ?> 
   </tbody> 
    </div>
-  </table><input type="submit" onclick="editAttendanceFlag()"  class="btn btn-blue-grey" value="Edit" />;
+  </table><input type="submit" onclick="editAttendanceFlag()"  class="btn btn-blue-grey" value="Edit" />
  
  </form>
  <?php

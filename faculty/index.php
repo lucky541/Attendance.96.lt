@@ -108,7 +108,7 @@ $toNotifyStudent=array();
                          if($no>0)
                           echo "<span id='bage' class='badge'>".$no."</span>"
                        ?>
-                      </span></a>
+                    </a>
                      </small>
                     </h2>
                      <div id="noti" style="display:none;"><?php echo  $_SESSION['enroll_no'];?></div>

@@ -27,6 +27,7 @@
 
   <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"> 
+  
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -46,7 +47,7 @@
          #about{
              padding-top:20px; 
          } #best-features{
-             padding-top:20px; 
+             padding-top:5px; 
          } #team{
              padding-top:30px; 
          }#contact{
@@ -188,10 +189,7 @@ onload="myFunction()"
                                     <li class="nav-item">
                                         <a class="nav-link" href="#Login" data-toggle="collapse" data-target="#collapseEx">Login</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#Video" data-toggle="collapse" data-target="#collapseEx">Video</a>
-                                    </li>
-                                    
+                                   
                                     <li class="nav-item">
                                         <a class="nav-link" href="#best-features" data-toggle="collapse" data-target="#collapseEx" >Features</a>
                                     </li>
@@ -365,17 +363,9 @@ onload="myFunction()"
 <!-- container for youtube Starts-->
 <div class="container" id="Video">
  <br />
-    <div class="divider-new ">
-        <h2 class="h2-s wow fadeInDown">Watch Us</h2>
-    </div>
+ 
 <!-- Large modal -->
-<center>
-  <br /><br />
-<a  data-toggle="modal" data-target=".bd-example-modal-lg">
- <img src="img/newYoutube.jpg" style="width: 100px; height: auto;" />
-</a>  
-  <br /><br /><br />
-</center>
+
 
 <!-- IN THE BELOW DIV THE YOUTUBE VIDEO IS EMBADED-->
 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="">
@@ -399,152 +389,40 @@ onload="myFunction()"
         <h2 class="h2-responsive wow fadeInDown">Best Features of AMS</h2>
     </div>
 
-
-
-        <div class="hoverable">
-            <!--First column-->
-                        <center>
-                            <!--Second column-->
-                            <div class=" animated slideInRight hideoverflow">
-                            <!--Carousel Wrapper-->
-                            <div id="carousel-example-2"  class="carousel slide  "  data-ride="carousel">
-                            <!--Indicators-->
-                            <ol class="carousel-indicators" >
-                            <li data-target="#carousel-example-2" data-slide-to="0" class="active dottes"></li>
-                            <li data-target="#carousel-example-2" data-slide-to="1" class="dottes"></li>
-                            <li data-target="#carousel-example-2" data-slide-to="2" class="dottes"></li>
-                            <li data-target="#carousel-example-2" data-slide-to="3" class="dottes"></li>
-                            </ol>
-                            <!--/.Indicators-->
-
-                               
-<!--Slides-->
-<div class="carousel-inner" role="listbox">
-  
-  <div class="carousel-item active ">
-                <!--Card-->
-            <div class="card  "  >
-            <center>  <!--Card image--> 
-            <div class=" overlay hm-white-slight ">
-            <img src="img/ams/ams4sm.jpg" class="img-fluid" alt=""> 
-            <a href="#">
-            <div class="mask"></div>
-            </a>
-            </div> 
-            <!--/.Card image-->
-            <!--Card content-->
-            <div class="card-block">
-            <!--Title-->
-            <h4 class="card-title"><b>Fast</b></h4>
-            <!--Text--><hr />
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-           </div>
-            <!--/.Card content-->
-            </center>
-            <br /> <br />
-            </div>
-            <!--/.Card-->
-  </div>
-            
-  <div class="carousel-item">
-             <!--Card-->
-            <div class="card  "  >
-           <center>  <!--Card image--> 
-            <div class=" overlay hm-white-slight">
-            <img src="img/ams/ams4sm.jpg" class="img-fluid" alt=""> 
-            <a href="#">
-            <div class="mask"></div>
-            </a>
-            </div> 
-            <!--/.Card image-->
-            <!--Card content-->
-            <div class="card-block">
-            <!--Title-->
-            <h4 class="card-title"><b>Mobile Accessible</b></h4>
-            <!--Text--><hr />
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-           </div>
-            <!--/.Card content-->
-            </center>
-            <br /> <br />
-            </div>
-            <!--/.Card-->
- </div>
-      
-                
-  <div class="carousel-item">
-         <!--Card-->
-            <div class="card "  >
-             <center>  <!--Card image--> 
-            <div class=" overlay hm-white-slight">
-            <img src="img/ams/ams4sm.jpg" class="img-fluid" alt=""> 
-            <a href="#">
-            <div class="mask"></div>
-            </a>
-            </div> 
-            <!--/.Card image-->
-            <!--Card content-->
-            <div class="card-block">
-            <!--Title-->
-            <h4 class="card-title"><b>Rich UI</b></h4>
-            <!--Text--><hr />
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-           </div>
-            <!--/.Card content-->
-            </center>
-            <br /> <br />
-            </div>
-            <!--/.Card-->
+   <div class="col-sm-6 " >
+     <img style="max-width: 100%; height: auto; max-height: 550px; " src="img/amsMobile.jpg" alt="amsMobile" />
+   </div>
    
- </div>
+   <div class="col-sm-6 purple z-depth-2" >
+     <br />
+       <h3 class="h3-responsive white-text col-sm-2"><img src="img/icons/smartphone.png"></h3>
+       <p class="white-text col-sm-10">some text will come up here to make this more cool then the previous version in which 
+       I used the slider to show the usp's of the app.</p> 
+   </div>
+   
+   <div class="col-sm-6 "><br /></div>
+  <div class="col-sm-6 pink  z-depth-2" >  <br />
+       <h3 class="h3-responsive white-text col-sm-2"><img src="img/icons/realtime.png"></h3>
+       <p class="white-text col-sm-10">some text will come up here to make this more cool then the previous version in which 
+       I used the slider to show the usp's of the app.</p>
+   </div>
 
-            
-  <div class="carousel-item">
-         <!--Card-->
-            <div class="card "  >
-            <center>  <!--Card image-->
-            <div class=" overlay hm-white-slight">
-            <img src="img/ams/ams4sm.jpg" class="img-fluid" alt=""> 
-            <a href="#">
-            <div class="mask"></div>
-            </a>
-            </div> 
-            <!--/.Card image-->
-            <!--Card content-->
-            <div class="card-block">
-            <!--Title-->
-            <h4 class="card-title"><b>Secure</b></h4>
-            <!--Text--><hr />
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-           </div>
-            <!--/.Card content-->
-            </center>
-            <br /> <br />
-            </div>
-            <!--/.Card-->
-       </div>
-    </div>
+   
+   <div class="col-sm-6"><br /></div>
+   <div class="col-sm-6 blue z-depth-2" >  <br />
+        <h3 class="h3-responsive white-text col-sm-2"><img src="img/icons/quick.png"></h3>
+       <p class="white-text col-sm-10">some text will come up here to make this more cool then the previous version in which 
+       I used the slider to show the usp's of the app.</p>
+   </div>
 
-                                
-<!--Controls-->
-<a class="left carousel-control side" href="#carousel-example-2" role="button" data-slide="prev" >
-<span class="icon-prev " aria-hidden="true"></span>
-<span class="sr-only">Previous</span>
-</a>
-<a class="right carousel-control side" href="#carousel-example-2" role="button" data-slide="next">
-<span class="icon-next" aria-hidden="true"></span>
-<span class="sr-only">Next</span>
-</a>
-<!--/.Controls-->
-                            </div>
-                            <!--/.Carousel Wrapper-->
-                        </div>
-                        <!--/Second column-->
-                        </center>
-     </div> <!-- row div ends here-->
-      <br />
-       <br />
-  
+
+   <div class="col-sm-6"><br /></div>
+   <div class="col-sm-6 orange  z-depth-2" >  <br />
+        <h3 class="h3-responsive white-text col-sm-2"><img src="img/icons/paper.png"></h3>
+       <p class="white-text col-sm-10">some text will come up here to make this more cool then the previous version in which 
+       I used the slider to show the usp's of the app.</p>
+   </div>
+
 </div><!-- container for Best Features Ends-->
 
 
@@ -564,14 +442,26 @@ onload="myFunction()"
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus modi sint accusantium earum, quisquam dolore odit cumque magnam temporibus blanditiis, nostrum voluptas perferendis, iusto repellendus error corporis ex totam voluptatem.</p>
                         </div>
                         <!--/First column-->
-       
+        
+        <!--Watch us div -->
+        <div>
+          <center>
+          <h2 class="h2-s wow fadeInDown">Watch Us</h2>
+          <br /><br />
+          <a  data-toggle="modal" data-target=".bd-example-modal-lg">
+          <img src="img/newYoutube.jpg" style="width: 100px; height: auto;" />
+          </a>  
+          <br />
+          </center>
+        </div><!--/Watch us div -->
+         
 </div><!-- About us container ends here-->
 
 
 <div class="divider-new animated fadeIn" id="team">
         <h2 class="h2-responsive wow fadeInDown">AMS Team</h2>
  </div>
-<div class="view animated fadeIn"  >
+<div class="view animated fadeIn "  >
 <!--      <!-- container for Team-->
 
           <div class="team container">
@@ -694,7 +584,7 @@ onload="myFunction()"
         </div>
         <!--/.Copyright-->
          <div class="white-text"> Follow Us :
-                      <a href="https://www.facebook.com/lucky.barkane" target="_blank" class="btn btn-primary btn-fb" style="border-radius: 60px; "><i class="fa fa-facebook left"></i> </a>
+                      <a href="https://www.facebook.com/amsiet" target="_blank" class="btn btn-primary btn-fb" ><i class="fa fa-facebook left"></i> </a>
                 </div>
         </div>
 </footer>

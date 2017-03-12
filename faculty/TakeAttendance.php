@@ -155,21 +155,23 @@ addSideNav($sideNavArray,'index.php');
  </div> -->
     <!--IN THIS DIV TABLE  WILL LOADED VIA A AJAX -->
     <div id ="loadTable"></div>
-</div>
+   </div>
 
   <div id="editAttendance">
   </div>
 
-<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-sm">
-    <div class="modal-content" id="content">
-      ...
-    </div>
-  </div>
+<div class="card  hoverable" id="studenDetailesDiv" class="float-center" style="z-index: 10000;
+  position: fixed;
+  top:250px;
+  margin: 5px;
+  padding: 10px;
+    max-width: 350px; 
+   
+">
+ 
 </div>
 
 </div><!-- end of jumbotron1-->
-
 
 <!-- SCRIPTS Starts -->
 <?php
@@ -177,21 +179,26 @@ addSideNav($sideNavArray,'index.php');
  loadBootstrapJs();
 ?>
     
-    <script type="text/javascript" src="../js/adminDash.js"></script>
-
           <script>
+              
 
-   function showme(str){
-      document.getElementById('content').innerHTML=str;
+$(document).ready(function(){
+  loadThisToo();
+  closeStudentDetailes();
+
+});
+
+
+
+function studenDetailes(enroll,attendance,name){
+  //alert(enroll + " " + attendance +" "+name);
+    LoadByAjax('studenDetailesDiv','popover.php?enroll='+enroll+'&attendance='+attendance+'&name='+name);
+     $('#studenDetailesDiv').show();
 
    }
-               
-
-  $(document).ready(function(){
-   
- loadThisToo();
- 
-});
+  function closeStudentDetailes(){
+    $('#studenDetailesDiv').hide();
+  } 
 
 function loadThisToo(){
  
@@ -219,7 +226,7 @@ function viewAttendance(section){
   LoadByAjax('loadTable','ViewAttendance.php?section='+section);
 }
  function LoadByAjax(divID,fileName){
-  
+ 
   var xmlHttp = new XMLHttpRequest();
   xmlHttp.onreadystatechange = function(){
                if(xmlHttp.readyState == 4 && xmlHttp.status==200){

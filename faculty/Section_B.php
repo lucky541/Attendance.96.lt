@@ -18,7 +18,7 @@
                         $getRow = $getResultSet->fetch_object();
                         $classesTaken = $getRow->class_happens_in_b;
                     
-                 echo "<h4 class='orange-text'><b>".$_SESSION['for_sectionB']."</b><hr />".$_SESSION['subject_name'].
+                 echo "<h4 class='blue-text'><b>".$_SESSION['for_sectionB']."</b><hr />".$_SESSION['subject_name'].
                  "<small class='text-muted'> <b> (Class's Taken : ".
                                 $classesTaken.")</b> Last class was taken on <b>".$getRow->b_date.
                                 "</b></small><hr /></h4>";
@@ -50,7 +50,7 @@
                           <tr>
                           <th>Roll No.</th>
                           <th>Present</th>
-                          <th>First Name</th>
+                          <th>Name</th>
                           </tr>
                           </thead>
                           <tbody>
@@ -64,9 +64,25 @@
                 $numberOfStudents+=1;
 
                 ?>
+                       <?php
+                            if($editAttendance=$row->edit){
+                              $attendance=$row->attendance+1;
+                           }else{
+                             $attendance=$row->attendance;
+                            } 
+
+                             $getNameResultSet = $dbConnection->query("SELECT username FROM valid_users_list WHERE enroll_no = '{$row->enroll_no}'");
+                         if($getNameRow = $getNameResultSet->fetch_object()){
+                               $getNameRow->username;
+                        }
+                         ?>
+
                         <tr>
                         <!-- enroll np-->
-                        <td scope='row'> <a onclick="showme('<?php echo $row->enroll_no;?>')" data-toggle="modal" data-target=".bd-example-modal-sm"> 
+                      <td scope='row'> <a 
+                        onclick="studenDetailes('<?php echo $row->enroll_no;?>','<?php echo  $attendance;?>','<?php echo $getNameRow->username;?>')"
+                         data-toggle="modal" data-target=".bd-example-modal-sm"> 
+                        
                         <?php echo "".$row->enroll_no."";?> </a>
                         </td>
                              
@@ -111,7 +127,7 @@
   </table>
 <?php
  
-     echo '<input type="submit" onclick="callAlert()"  class="btn btn-info wave-effect" value="Submit" />';
+     echo '<input type="submit" onclick="callAlert()"  class="btn btn-unique wave-effect" value="Submit" />';
    } 
   
     if( !$editFlag && $date==$b_date)

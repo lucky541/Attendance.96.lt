@@ -34,7 +34,7 @@
                       ?>
   
                      
-                      <a  class='btn btn-orange waves-effect' 
+                      <a  class='btn btn-info waves-effect' 
                           onClick ="loadTableForSectionB('B')">
 
                                          <?php echo $classYear.'_'.$classDept.'_B'."</a>";

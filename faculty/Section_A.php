@@ -52,7 +52,7 @@
                           <tr>
                           <th>Roll No.</th>
                           <th>Present</th>
-                          <th>First Name</th>
+                          <th>Name</th>
                           </tr>
                           </thead>
                           <tbody>
@@ -66,20 +66,31 @@
                 $numberOfStudents+=1;
 
                 ?>
-                        <tr>
-                        <!-- enroll np-->
-                        <td scope='row'> <a onclick="showme('<?php echo $row->enroll_no;?>')" data-toggle="modal" data-target=".bd-example-modal-sm"> 
-                        <?php echo "".$row->enroll_no."";?> </a>
-                        </td>
-                             
-                        <td>
-                         <?php
+                  <?php
                             if($editAttendance=$row->edit){
                               $attendance=$row->attendance+1;
                            }else{
                              $attendance=$row->attendance;
                             } 
+
+                             $getNameResultSet = $dbConnection->query("SELECT username FROM valid_users_list WHERE enroll_no = '{$row->enroll_no}'");
+                         if($getNameRow = $getNameResultSet->fetch_object()){
+                               $getNameRow->username;
+                        }
                          ?>
+
+                        <tr>
+                        <!-- enroll np-->
+                        <td scope='row'> <a 
+
+                        onclick="studenDetailes('<?php echo $row->enroll_no;?>','<?php echo  $attendance;?>','<?php echo $getNameRow->username;?>')"
+                         data-toggle="modal" data-target=".bd-example-modal-sm"> 
+                        
+                        <?php echo "".$row->enroll_no."";?> </a>
+                        </td>
+                             
+                        <td>
+                       
 
                          <div class='checkbox checkbox-success'>
                         <input type="checkbox" id='checkbox<?php echo $numberOfStudents;?>'  name="<?php echo 'student'.$numberOfStudents; ?>"

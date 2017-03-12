@@ -117,38 +117,31 @@
 
 <body class="">
 <div class="container" id="fb-root"></div>
-<script>
-(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id))
-        return;
-    js = d.createElement(s);
-    js.id = id;
-    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-</script>
 
 <div class="container">
 <br /><br />
 <div class="divider-new">
         <h2 class="h2-responsive wow fadeInDown">AMS Social Media</h2>
     </div>
-
-<div class="fb-post col-sm-4 animated fadeIn " data-href="https://www.facebook.com/amsiet/photos/a.1199187610164672.1073741827.1194521077297992/1199186873498079/?type=3&theater"></div>
-
-<div class="fb-post col-sm-4 animated fadeIn " data-href="https://www.facebook.com/amsiet/photos/a.1199187610164672.1073741827.1194521077297992/1199190883497678/?type=3&theater"></div>
-
-<div class="fb-post col-sm-4 animated fadeIn " data-href="https://www.facebook.com/amsiet/photos/a.1199187610164672.1073741827.1194521077297992/1199189953497771/?type=3&theater"></div>
-
-<div class="fb-post col-sm-4 animated fadeIn " data-href="https://www.facebook.com/amsiet/photos/a.1199187610164672.1073741827.1194521077297992/1199190883497678/?type=3&theater"></div>
-
-<div class="fb-post col-sm-4 animated fadeIn " data-href="https://www.facebook.com/amsiet/photos/a.1199187610164672.1073741827.1194521077297992/1199191776830922/?type=3&theater"></div>
+<center>
+<iframe class="col-sm-4" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Famsiet%2Fposts%2F1199186873498079%3A0" height="393"  style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 
 
+<iframe class="col-sm-4" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Famsiet%2Fposts%2F1199187853497981%3A0" height="393"  style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+
+<iframe class="col-sm-4" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Famsiet%2Fposts%2F1199190883497678%3A0" height="393"  style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+<iframe class="col-sm-4" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Famsiet%2Fposts%2F1199189953497771%3A0" height="393"  style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+
+
+
+<iframe class="col-sm-4" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Famsiet%2Fposts%2F1199191776830922%3A0" height="393" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+</center>
 </div>
-
- <!-- JQuery -->
+ <!-- SCRIPTS Starts -->
+   <!-- JQuery -->
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 
     <!-- Bootstrap tooltips -->
@@ -159,10 +152,7 @@
 
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
-  <script>
+
+    
 </body>
 </html>
-<!--
-<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Famsiet%2Fposts%2F1199191776830922%3A0&width=500"
- width="500" height="393" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
--->

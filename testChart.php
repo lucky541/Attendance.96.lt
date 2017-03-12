@@ -1,3 +1,15 @@
+
+    <!--Feature 3 -->
+      <div class="col-sm-4 text-xs-center hoverable"><br />
+        <h3 class="h3-responsive"><i class="fa fa-mobile fa-5x" aria-hidden="true"></i></h3>
+          
+          <strong class="lead">Mobile</strong>
+          <p >bla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla bla
+          bla bla bla bla blabla bla bla bla blabla bla bla bla bla
+          bla bla bla bla blabla bla bla bla bla </p><br />
+      </div><!--/Feature 3 -->
+
+
 <?php
  include 'PieChart.php';
 ?>
