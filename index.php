@@ -12,11 +12,11 @@
     else if(!strcmp($_SESSION['role'], 'student')){
       header("Location: student/index.php");
      }
-     
+
   }
   else
   {
-  
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -26,12 +26,12 @@
    <meta name="viewport" content="width=device-width,initial-scale=1"/>
 
   <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"> 
-  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    
+
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">
 
@@ -39,24 +39,24 @@
     <link href="css/index.css" rel="stylesheet">
     <style>
          body{
-          position: relative; 
+          position: relative;
          }
           #home{
-             padding-top:8%; 
+             padding-top:8%;
          }
          #about{
-             padding-top:20px; 
+             padding-top:20px;
          } #best-features{
-             padding-top:5px; 
+             padding-top:5px;
          } #team{
-             padding-top:30px; 
+             padding-top:30px;
          }#contact{
-             padding-top:20px; 
+             padding-top:20px;
          }
        #Login{
-             padding-top:50px; 
+             padding-top:50px;
          }
-        .loginTitle{  
+        .loginTitle{
             background-color: #33b5e5;
             position:absolute;
             top:-50px;
@@ -65,8 +65,8 @@
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             border-radius: 5px;
    }
-       
-           
+
+
 .view {
  background: url("img/bg-img.jpg") no-repeat fixed;
   background-repeat: no-repeat;
@@ -77,7 +77,7 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-} 
+}
   #tagline{
         color: white;
     }
@@ -133,10 +133,10 @@
      .dottes{
          box-shadow: 0 0 2px #2684db;
      }
-    
+
      .feeback{
-           background-color: #2684db;
-        width: 110px;
+          /* background-color: #2684db;
+        width: 110px;*/
         padding: 3px;
         position: fixed;
         right: 20px;
@@ -149,7 +149,7 @@
      .shadowbg{
            box-shadow:0 0 5px #6666;
         }
-    
+
 .form-inline{
      display: inline;
   }
@@ -157,8 +157,8 @@
  width: 100%;
 }
  </style>
- 
- </head>  
+
+ </head>
 }
 
 <body  style="margin:0;">
@@ -168,10 +168,10 @@ onload="myFunction()"
 <div style="display:none;" id="myDiv"></div>
    -->
 
-     
+
     <!--Navbar-->
 <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar">
-    
+
      <!-- Collapse button-->
     <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
         <i class="fa fa-bars"></i>
@@ -182,14 +182,14 @@ onload="myFunction()"
         <!--Collapse content-->
         <div class="collapse navbar-toggleable-xs" id="collapseEx">
             <!--Navbar Brand-->
-            <a class="navbar-brand" href="#home" data-toggle="collapse" data-target="#collapseEx">  <img src="img/ams/ams4sm.jpg"  class="img-reponsive" style="margin: auto; height: 20px;"/> </a>
+            <a class="navbar-brand" href="#home" data-toggle="collapse" data-target="#collapseEx">  <img src="img/ams/ams4sm.jpg"  class="img-reponsive" style="margin: auto; height: 20px; z-index:100000;"/> </a>
             <!--Links-->
                               <ul class="nav navbar-nav ">
-                                  
+
                                     <li class="nav-item">
                                         <a class="nav-link" href="#Login" data-toggle="collapse" data-target="#collapseEx">Login</a>
                                     </li>
-                                   
+
                                     <li class="nav-item">
                                         <a class="nav-link" href="#best-features" data-toggle="collapse" data-target="#collapseEx" >Features</a>
                                     </li>
@@ -205,7 +205,7 @@ onload="myFunction()"
                                     <li class="nav-item">
                                         <a class="nav-link" href="social.php" target="_blank">Social Media</a>
                                     </li>
-                                 </ul> 
+                                 </ul>
             <!--Search form
             <form class="form-inline">
                 <input class="form-control" type="text" placeholder="Search">
@@ -217,10 +217,10 @@ onload="myFunction()"
 
 </nav>
 <!--/.Navbar-->
-  
+
 
 <!--Mask for landing page heading and login form-->
-<div id="landingPage" class="view animated fadeIn  ">
+<div id="landingPage" class="view animated fadeIn content ">
     <div class="flex-center">
         <div class="container">
             <div class="row" id="home">
@@ -230,66 +230,66 @@ onload="myFunction()"
 
                         <div class=" font_white" style="margin-top:0px;">
                               <!--First column-->
-                           <div class="">
-                              <img src="img/ams/amsgif51.gif"  class="imgResponsive z-depth-2 " /> 
+                           <div class=" animated swing">
+                              <img src="img/ams/amsgif51.gif"  class="imgResponsive z-depth-2 " />
                             </div>
-                             
-                              
+
+
                                  <div class=" ">
                                <center>
                                  <hr>
                                  <div id ="tagline" class="lead white-text fadeInLeft " data-wow-delay="0.4s" >
                                     The Better Towards The Attendance System.
-                                </div> 
+                                </div>
                                </center> </div>
-                                 
-                           
+
+
                                 <br/>   <br/>
                         </div>
                         <!--/.First column-->
 
                 <!--/.First column-->
-                     
+
                                <br/>
-                  
+
                             <!--Second column-->
-                            <div id="Login" class=" animated bounce ">
+                            <div id="Login" class="">
                                         <!--Form-->
                                          <form class="z-depth-2 " role="form " action="validateUser.php"  method="post">
                                         <div class="card wow fadeInRight">
                                             <div class="card-block row">
-                                               
+
                                                    <h4 class="h4-responsive blue-text  fadeInDown" style="margin-left:15px; ">Login<hr/></h4>
-                                           
+
                                             <div class="md-form col-sm-1"></div>
-                                           
+
                                             <div class="md-form col-sm-4">
                                                     <i class="fa fa-user prefix" aria-hidden="true" style=" color:#33b5e5 " ></i>
-                                                
+
                                                        <!--TAKING USER PASSWORD IN THIS FIELD-->
                                                       <input type="text" id="form1" class="form-control forLogin" name="input_username" required>
                                                     <label for="form1">Your username</label>
                                                 </div>
-                                                
-                                                
+
+
                                                 <div class="md-form col-sm-4">
                                                     <i class="fa fa-lock prefix" aria-hidden="true" style=" color:#33b5e5 " ></i>
-                                                
+
                                                        <!--TAKING USER PASSWORD IN THIS FIELD-->
                                                       <input type="text" id="form2" class="form-control forLogin" name="input_password" required>
                                                     <label for="form2">Your password</label>
                                                 </div>
-                                                       
-                                              
+
+
                                                 <div class="text-xs-center">
                                                     <button type="submit" class="btn btn-info waves-effect">Login</button>
                                                 </div>
-                                                  
-                                                <!--invalid username or password message will be load in this div -->                                          
-                                                
+
+                                                <!--invalid username or password message will be load in this div -->
+
                                                     <?php
                                                          if(isset($_GET['message'])){
-                                                              echo ' 
+                                                              echo '
                                                                  <div class="text-xs-left red-text col-sm-4" id="LoginResponseText">username or password is not valid.</div>
                                                              ';
                                                           }
@@ -299,7 +299,7 @@ onload="myFunction()"
                                         </form>
                                         <!--/.Form-->
                                     </div>
-                            
+
                             <!--/Second column-->
             </div>
         </div>
@@ -310,49 +310,50 @@ onload="myFunction()"
 
   <!---feed back button-->
 <div style="position:relative" id="feedbackContainer">
-<div class="feeback z-depth-2 animated fadeIn">
+<div class="feeback animated fadeIn">
 <a style="color:white"  class="feedback" data-toggle="modal" data-target="#modal-feedback">
-    feedback
+    <i class="fa fa-comments fa-2x  blue-text"></i>
 </a>
+
   </div>
 </div>
 
 
-                      
+
 <!-- Modal Login -->
 <form action="Feedback.php" method="post">
 <div class="modal fade modal-ext" id="modal-feedback" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <!--Content-->
         <div class="modal-content">
-           
+
             <!--Header-->
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
-                <h3 class="h3-reponsive"> Feedback</h3>
+                <h4 class="h4-reponsive"> Feedback</h4>
             </div>
-            
+
             <!--Body-->
             <div class="modal-body">
                 <div class="md-form">
                     <i class="fa fa-user prefix" style=" color:#33b5e5 "></i>
-                    <input type="text" id="form2" class="form-control" name="name">
+                    <input type="text" id="form2" class="form-control forLogin" name="name" required>
                     <label for="form2">Your Name</label>
                 </div>
 
                 <div class="md-form">
                 <i class="fa fa-pencil prefix" aria-hidden="true" style=" color:#33b5e5 " style=" color:#33b5e5 "></i>
-                <textarea type="text" id="form8" class="md-textarea" name="feedback"></textarea>
+                <textarea type="text" id="form8" class="md-textarea forLogin" name="feedback" required></textarea>
                 <label for="form8">Write to us</label>
                 </div>
 
                 <div class="text-xs-center">
-                    <button type="submit" class="btn btn-outline-primary ">send</button>
+                    <button type="submit" class="btn btn-primary ">send</button>
                 </div>
             </div>
-            
+
         </div>
         <!--/.Content-->
     </div>
@@ -361,9 +362,9 @@ onload="myFunction()"
 
 
 <!-- container for youtube Starts-->
-<div class="container" id="Video">
+<div class="container content" id="Video">
  <br />
- 
+
 <!-- Large modal -->
 
 
@@ -374,52 +375,52 @@ onload="myFunction()"
         <br />  <br />
 <div class="embed-responsive embed-responsive-16by9">
     <iframe id="video" class="embed-responsive-item" src="https://www.youtube.com/embed/QNvVNwV7Lsc?rel=0" frameborder="0" allowfullscreens>
-      
+
     </iframe>
 </div>
-    
+
   </div>
 </div><!-- IN THE ABOVE DIV THE YOUTUBE VIDEO IS EMBADED-->
 </div>
 
 <!-- container for Best Features Starts-->
-<div class="container animated fadeIn" id="best-features">
+<div class="container animated fadeIn content" id="best-features">
 
     <div class="divider-new">
         <h2 class="h2-responsive wow fadeInDown">Best Features of AMS</h2>
     </div>
 
-   <div class="col-sm-6 " >
+   <div class="col-sm-6 animated" id="amsMobile">
      <img style="max-width: 100%; height: auto; max-height: 550px; " src="img/amsMobile.jpg" alt="amsMobile" />
    </div>
-   
-   <div class="col-sm-6 purple z-depth-2" >
+
+   <div class="col-sm-6 purple z-depth-2 animated best-feature" >
      <br />
        <h3 class="h3-responsive white-text col-sm-2"><img src="img/icons/smartphone.png"></h3>
-       <p class="white-text col-sm-10">some text will come up here to make this more cool then the previous version in which 
-       I used the slider to show the usp's of the app.</p> 
+       <p class="white-text col-sm-10">some text will come up here to make this more cool then the previous version in which
+       I used the slider to show the usp's of the app.</p>
    </div>
-   
+
    <div class="col-sm-6 "><br /></div>
-  <div class="col-sm-6 pink  z-depth-2" >  <br />
+  <div class="col-sm-6 pink  z-depth-2 animated  best-feature" >  <br />
        <h3 class="h3-responsive white-text col-sm-2"><img src="img/icons/realtime.png"></h3>
-       <p class="white-text col-sm-10">some text will come up here to make this more cool then the previous version in which 
+       <p class="white-text col-sm-10">some text will come up here to make this more cool then the previous version in which
        I used the slider to show the usp's of the app.</p>
    </div>
 
-   
+
    <div class="col-sm-6"><br /></div>
-   <div class="col-sm-6 blue z-depth-2" >  <br />
+   <div class="col-sm-6 blue z-depth-2 animated best-feature" >  <br />
         <h3 class="h3-responsive white-text col-sm-2"><img src="img/icons/quick.png"></h3>
-       <p class="white-text col-sm-10">some text will come up here to make this more cool then the previous version in which 
+       <p class="white-text col-sm-10">some text will come up here to make this more cool then the previous version in which
        I used the slider to show the usp's of the app.</p>
    </div>
 
 
    <div class="col-sm-6"><br /></div>
-   <div class="col-sm-6 orange  z-depth-2" >  <br />
+   <div class="col-sm-6 red  z-depth-2 animated best-feature " >  <br />
         <h3 class="h3-responsive white-text col-sm-2"><img src="img/icons/paper.png"></h3>
-       <p class="white-text col-sm-10">some text will come up here to make this more cool then the previous version in which 
+       <p class="white-text col-sm-10">some text will come up here to make this more cool then the previous version in which
        I used the slider to show the usp's of the app.</p>
    </div>
 
@@ -428,48 +429,46 @@ onload="myFunction()"
 
 
 <!-- container for About us Starts-->
-<div class="container animated fadeIn" id="about">
+<div class="container animated fadeIn content" id="about">
 
     <div class="divider-new">
         <h2 class="h2-responsive wow fadeInDown">About Us</h2>
     </div>
 
                       <!--First column-->
-                        <div class="col-md-12 wow fadeIn">
+                        <div class="col-md-12 wow aboutContent"  >
                             <h2 class="h2-responsive">Why is it so great?</h2>
                             <hr>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus modi sint accusantium earum, quisquam dolore odit cumque magnam temporibus blanditiis, nostrum voluptas perferendis, iusto repellendus error corporis ex totam voluptatem.</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus modi sint accusantium earum, quisquam dolore odit cumque magnam temporibus blanditiis, nostrum voluptas perferendis, iusto repellendus error corporis ex totam voluptatem.</p>
                         </div>
                         <!--/First column-->
-        
+
         <!--Watch us div -->
         <div>
           <center>
-          <h2 class="h2-s wow fadeInDown">Watch Us</h2>
+          <h2 class="h2-responsive aboutContent">Watch Us</h2>
           <br /><br />
           <a  data-toggle="modal" data-target=".bd-example-modal-lg">
           <img src="img/newYoutube.jpg" style="width: 100px; height: auto;" />
-          </a>  
+          </a>
           <br />
           </center>
         </div><!--/Watch us div -->
-         
+
 </div><!-- About us container ends here-->
 
 
-<div class="divider-new animated fadeIn" id="team">
+<div class="divider-new animated fadeIn content" id="team">
         <h2 class="h2-responsive wow fadeInDown">AMS Team</h2>
  </div>
-<div class="view animated fadeIn "  >
+<div class="view animated fadeIn teamContent"  >
 <!--      <!-- container for Team-->
 
           <div class="team container">
-                     
-                     
                        <center>
                       <div class="float-xs-center card" style="max-width: 300px;">
-                      
+
                       <div class="">
                       <img class="team_pic z-depth-2"  src="img/lucky.jpg" alt="Lucky Barkane" >
                       <br >
@@ -478,29 +477,29 @@ onload="myFunction()"
                        <div class="white">
                        <h3 class="h3-responsive "><br/><b>Lucky Barkane</b><br /> </h3>
                         <p class="text-muted lead">Web Developer</p>
-                       
+
                         <a href="https://www.facebook.com/lucky.barkane" target="_blank" class="btn btn-primary">
                        <i class="fa fa-facebook " ></i> </a>
 
                          <a href=" https://in.linkedin.com/in/lucky-barkane-793820129" target="_blank" class="btn btn-info">
                        <i class="fa fa-linkedin " ></i> </a>
-                      
+
                        <br/>
              <br/>
                       <!--
                       <p>You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a href="#">links</a> for people to be able to follow them outside the site.</p>
-                      --> 
-                      
+                      -->
+
                       </div>
                       </div>
                    </center>
 
           </div>
-</div> <!-- Team container ends here--> 
+</div> <!-- Team container ends here-->
 
 
 <!-- container for Contact us-->
-<div class="container-fluid animated fadeIn" id="contact">
+<div class="container-fluid animated fadeIn content" id="contact">
 
     <div class="divider-new">
         <h2 class="h2-responsive wow fadeInDown ">Contact Us</h2>
@@ -514,7 +513,7 @@ onload="myFunction()"
                                         <!--Header-->
                                         <div class="text-xs-left">
                                           <br/>  <h3 class="h3-responsive blue-text">Sends Comment </h3><hr/></div>
-                                        
+
 
                                         <!--Body-->
                                         <div class="md-form ">
@@ -525,15 +524,15 @@ onload="myFunction()"
 
                                         <div class="md-form">
                                          <i class="fa fa-user prefix" aria-hidden="true" style=" color:#33b5e5 "></i>
-                                          
+
                                             <input type="text" id="form7" class="form-control forLogin" name="subject" required>
                                             <label for="form7">Subject</label>
                                         </div>
-                                       
+
                                       <!--Textarea with icon prefix-->
                                             <div class="md-form">
                                              <i class="fa fa-pencil prefix" aria-hidden="true" style=" color:#33b5e5 "></i>
-                                               
+
                                                 <textarea type="text" id="form8" class="md-textarea forLogin" name="message" required></textarea>
                                                 <label for="form8">Write to us</label>
                                             </div>
@@ -548,25 +547,25 @@ onload="myFunction()"
 
 
                             <!--Second column-->
-                        <div class="col-md-4 wow fadeIn card">  
+                        <div class="col-md-4 wow fadeIn card">
                           <div class="card-block">
                           <!--Header-->
                           <div class="text-xs-left">
                             <br/>  <h3 class="h3-responsive blue-text">IET-DAVV, Indore(452001)</h3><hr/></div>
-                         
+
 
                             <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus modi sint accusantium earum, quisquam dolore odit cumque magnam temporibus blanditiis, nostrum voluptas perferendis, iusto repellendus error corporis ex totam voluptatem.</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus modi sint accusantium earum, quisquam dolore odit cumque magnam temporibus blanditiis, nostrum voluptas perferendis, iusto repellendus error corporis ex totam voluptatem.</p>
                         </div>
                         </div>
-                        <!--/Second column-->  
-  
+                        <!--/Second column-->
+
 </div><!-- Contact us container ends here-->
- 
+
   <!--Footer-->
     <footer class="page-footer center-on-small-only">
 
-        
+
         <!--Call to action-->
         <div class="call-to-action ">
             <h4 class="h4-responsive">Attendance Management System</h4>
@@ -575,12 +574,12 @@ onload="myFunction()"
         <!--Copyright-->
         <div class="footer-copyright">
             <div class="container-fluid">
-               &copy 2017 reserverd: <a href="#home" class="white-text"> AMS. </a>       
+               &copy 2017 reserverd: <a href="#home" class="white-text"> AMS. </a>
 
-               
+
              </div>
-           
-           
+
+
         </div>
         <!--/.Copyright-->
          <div class="white-text"> Follow Us :
@@ -603,9 +602,9 @@ onload="myFunction()"
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
 
-    
 
-    
+
+
   <script>
    // loadiner spinner functions
                         var myVar;
@@ -619,7 +618,7 @@ onload="myFunction()"
                           document.getElementById("myDiv3").style.display = "block";
                         }
                //end loadiner spinner
-               
+
     $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
@@ -630,9 +629,9 @@ onload="myFunction()"
       event.preventDefault();
 
       // Store hash
-      /*Assume that the current URL http://www.example.com/test.htm#part2: 
+      /*Assume that the current URL http://www.example.com/test.htm#part2:
        var x = location.hash;
-       
+
       The result of x will be: #part2
       */
       var hash = this.hash;
@@ -641,7 +640,7 @@ onload="myFunction()"
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 700, function(){
-   
+
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
@@ -661,9 +660,43 @@ $('.forLogin').blur(function(){
 function closeit(){
             $('iframe').attr('src', $('iframe').attr('src'));
 }
+
+
+//in this the id of the  till scroll section will be load
+var content = $(".content");
+var sectionId='undefined';
+$(window).on("scroll", function(e) {
+ var el = content.filter(function(i, el) {
+   return el.getBoundingClientRect().bottom >= parseInt($(el).css("height"))
+ })
+ , sectionId = el.prev(".content").is(content)
+               ? el.prev(".content").attr("id")
+               : content.eq(-1).attr("id");
+
+
+sectionIdOfSection(sectionId)
+}).scroll();
+function sectionIdOfSection(sectionId2){
+   console.log(sectionId);
+  if(sectionId!=sectionId2){
+    if(sectionId2=='best-features'){
+      $('#amsMobile').addClass('slideInLeft');
+      $('.best-feature').addClass('slideInRight');
+    }
+    if(sectionId2=='about'){
+       $('.aboutContent').addClass('slideInUp');
+    }
+    if(sectionId2=='team'){
+      $('.teamContent').addClass('slideInUp');
+    }
+
+  //  alert(sectionId2)
+    sectionId=sectionId2;
+  }
+}
   </script>
 </body>
 </html>
-  <?php 
+  <?php
   }
 ?>

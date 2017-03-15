@@ -19,7 +19,7 @@ function loadBootstrapCSS(){
                  width: 100%;
                  height: 100%;
                  z-index: 100%;
-                 background: url("../img/amsLogoLoding.gif") no-repeat center center;                
+                 background: url("../img/amsLogoLoding2.gif") no-repeat center center;                
             }
            
           
