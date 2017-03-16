@@ -6,7 +6,7 @@ include '../sideNav.php';
  session_start();
    $role=$_SESSION['role'];
 //check if user is admin then only show the below content
- if(!strcmp($role,'student')){                   
+ if(!strcmp($role,'student')){
 ?>
 
 <!DOCTYPE html>
@@ -16,13 +16,13 @@ include '../sideNav.php';
       <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <!-- Font Awesome -->
 <?php
- // this will load the essential bootstrap files 
+ // this will load the essential bootstrap files
  loadBootstrapCSS();
 ?>
 <link href="../css/TeacherDash.css" rel="stylesheet" />
 <link rel="stylesheet" href="../css/w3Css.css">
 
- <style>   
+ <style>
 .view {
 background: url("../img/bg2.jpg") no-repeat center center fixed ;
  /*  background: url("img/bg1.jpg") no-repeat center center fixed;*/
@@ -31,7 +31,7 @@ background: url("../img/bg2.jpg") no-repeat center center fixed ;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-} 
+}
 
 .showME{
   box-shadow:0 0 3px lightgray;
@@ -49,15 +49,19 @@ background: url("../img/bg2.jpg") no-repeat center center fixed ;
 }
         </style>
 
- </head>  
+ </head>
 
 <body onload="myFunction()" style="margin:0;">
 
-<div id="loader"></div>
+<div id="loader"><center id="loading" class="blue-text">
+  <i class="fa fa-spinner fa-spin fa-5x fa-fw"></i>
+   <span class="sr-only">Loading...</span>
+  </center>
+</div>
 
 <div style="display:none;" id="myDiv" class="view">
 
-<?php 
+<?php
   $sideNavArray = array('Notes'=>'#note',
             'Schedule'=>'#schedule',
             'Attendance'=>'#attendance',
@@ -67,7 +71,7 @@ background: url("../img/bg2.jpg") no-repeat center center fixed ;
 
 $enroll_no=$_SESSION['enroll_no'];
    $resultset = $dbConnection->query("SELECT seen FROM detension_list WHERE enroll = '{$enroll_no}' and seen=0");
-     
+
         $no=mysqli_num_rows($resultset);
     $enroll_no = $_SESSION['enroll_no'];
                             $department=$_SESSION['department'];
@@ -78,16 +82,16 @@ $enroll_no=$_SESSION['enroll_no'];
 
 
         <div class="col-md-11">
-                   
+
     <br /><hr />
- <br/> 
+ <br/>
                     <!--Welcome Jumbotron-->
                     <div class="jumbotron row" id="note">
 
                    <div id="myDIV" class="header col-sm-6" >
                     <h1 class="h1-responsive">Welcome <?php echo  $_SESSION['username'];?>
-                    
-                    <small>  
+
+                    <small>
                      <a id="bell" onclick="showNotification()" data-toggle="" title="" data-placement="" >
                       <i class="fa fa-bell-o" aria-hidden="true"></i> <span id='bage' class="badge">
                        <?php echo $no;?>
@@ -97,7 +101,7 @@ $enroll_no=$_SESSION['enroll_no'];
                      <div id="noti" style="display:none;"><?php echo  $_SESSION['enroll_no'];?></div>
                       <!--notification will be load by ajax-->
                       <div id="showNoti" class="showME"></div>
-                      
+
                      <?php
                         echo "<p class='lead'>Class : ".$year.'_'.$department.'_'.$section.'</p>';
                       ?>
@@ -105,8 +109,8 @@ $enroll_no=$_SESSION['enroll_no'];
 
                     <p class="lead">Date : <?php  echo date('d/m/Y');?> <br />
                                     Day :  <?php echo jddayofweek ( cal_to_jd(CAL_GREGORIAN, date("m"),date("d"), date("Y")) , 1 ); ?>
-                  
-                      
+
+
                    </p>
                     <!-- this will add the panel for input for notes-->
                     <?php
@@ -115,31 +119,31 @@ $enroll_no=$_SESSION['enroll_no'];
                     </div><!--/.Welcome Jumbotron -->
 
     <br /><hr />
- <br/> 
+ <br/>
                     <!-- Schedule container -->
                     <div class="jumbotron row" id="schedule">
                     <h2 class="h2-responsive">#Your Schedule</h2>  <hr />
                     <center><img src="../img/schedule.jpg"  class="img-responsive"> </center>
                     </div>
 
-        
+
 
     <br /><hr />
- <br/> 
+ <br/>
                     <!--Faculty Jumbotron-->
                     <div class="jumbotron row" id="attendance">
                     <h2 class="h2-responsive">#Attendance</h2> <hr />
-                    <?php 
-                    
-                            
+                    <?php
+
+
                             $FetchSubjectsQuery = "SELECT * FROM subject_table WHERE for_department = '{$department}' AND for_year = '{$year}'";
-                            
+
                             $resultSet = $dbConnection->query($FetchSubjectsQuery);
 
                             if($resultSet->num_rows){
-                             
+
                             while($row = $resultSet->fetch_object())
-                            {  
+                            {
                               ?>
                             <!--Panel1-->
                             <div class="card col-sm-3 hoverable">
@@ -148,9 +152,9 @@ $enroll_no=$_SESSION['enroll_no'];
                             </h3>
                             <div class="card-block">
                             <h4 class="card-title"> <?php   echo "Subject Code :".$row->subject_code; ?></h4>
-                             
-                             <?php  
-                            
+
+                             <?php
+
                             //fetching attendance
                             $FetchSubjectsAttendanceQuery = "SELECT * FROM {$row->subject_code} WHERE enroll_no = '{$enroll_no}'";
                             if($fetchAttendance = $dbConnection->query($FetchSubjectsAttendanceQuery)){
@@ -161,9 +165,9 @@ $enroll_no=$_SESSION['enroll_no'];
                              <?php
                                  echo "Attendance : <b>".$attendanceRow->attendance."</b><br />";
                                  }
-                                } 
+                                }
                               echo 'Tought By : '.$row->tought_by."<br/><br/>";
-                           
+
                              ?>
                             </p>
                             </div>
@@ -172,9 +176,9 @@ $enroll_no=$_SESSION['enroll_no'];
                              <?php
                              }
                                }
-                        
+
                         ?>
-                 
+
 
 
 </div><!-- this div sidePage containe ends -->
@@ -186,7 +190,7 @@ $enroll_no=$_SESSION['enroll_no'];
 
 
 
-     
+
 <!-- SCRIPTS Starts -->
    <!-- JQuery -->
 <?php
@@ -196,9 +200,9 @@ $enroll_no=$_SESSION['enroll_no'];
     <script type="text/javascript" src="../js/adminDash.js"></script>
 
           <script>
-          
+
   $(document).ready(function(){
-  
+
 loadNotes('<?php echo $_SESSION['enroll_no'] ?>');
 });
 
@@ -229,7 +233,7 @@ function showNotification(){
 
      $('#showNoti').toggle();
      enroll_id= $('#noti').text()
-     LoadByAjax('showNoti','loadNotification.php?enroll_id='+enroll_id); 
+     LoadByAjax('showNoti','loadNotification.php?enroll_id='+enroll_id);
 }
 
 function LoadByAjax(divID,fileName){
@@ -237,19 +241,19 @@ function LoadByAjax(divID,fileName){
   var xmlHttp = new XMLHttpRequest();
   xmlHttp.onreadystatechange = function(){
                if(xmlHttp.readyState == 4 && xmlHttp.status==200){
-                
-                   
+
+
                    document.getElementById(divID).innerHTML = xmlHttp.responseText;
-                  
+
                  }
            };
-         
+
            xmlHttp.open('GET',fileName,true);
            xmlHttp.send();
  }
   </script>
  </body>
-</html>    
+</html>
 
 <?php
  }//if admin

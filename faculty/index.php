@@ -15,7 +15,7 @@ include '../sideNav.php';
 	<title>AMS-Faculty</title>
 
 <?php
- // this will load the essential bootstrap files 
+ // this will load the essential bootstrap files
  loadBootstrapCSS();
   $enroll_no = $_SESSION['enroll_no'];
   $date = date('Y-m-d');
@@ -30,17 +30,17 @@ include '../sideNav.php';
      $attendance+=1;
       $markAttendance = "UPDATE facultiesattendance SET attendance={$attendance}, date='{$date}' WHERE enroll_no= '{$enroll_no}'";
       $dbConnection->query($markAttendance);
-      
+
    }
-   
+
 $enroll_no=$_SESSION['enroll_no'];
    $resultset = $dbConnection->query("SELECT seen FROM facultynotification WHERE send_to = '{$enroll_no}' and seen=0");
-     
+
         $no=0;
         while($row=$resultset->fetch_object()){
           $no+=1;
         }
- 
+
 ?>
 
 <link href="../css/TeacherDash.css" rel="stylesheet" />
@@ -62,49 +62,54 @@ $enroll_no=$_SESSION['enroll_no'];
   font-size:20px;
   padding:10px;
 }
-  
+
         </style>
 
- </head>  
+ </head>
 
 <body onload="myFunction()" style="margin:0;">
 
-<div id="loader"></div>
+<div id="loader">
+  <center id="loading" class="blue-text">
+  <i class="fa fa-spinner fa-spin fa-4x fa-fw"></i>
+   <span class="sr-only">Loading...</span>
+ </center>
+</div>
 
 <div style="display:none;" id="myDiv" class="view">
 
 
-<?php 
+<?php
   $sideNavArray = array('Notes'=>'#note',
             'Schedule'=>'#schedule',
             'Attendance'=>'#attendance',
             'Detention'=>'#detention',
             'Option1'=>'#','Option2'=>'#','Option3'=>'#','Option4'=>'#',
              'Log Out'=>'../logMeOut.php');
-addSideNav($sideNavArray,'#note'); 
+addSideNav($sideNavArray,'#note');
 $toNotifyStudent=array();
 
 
   ?>
 
-        <!-- Purple Header 
-        <div class="edge-header" id="note">  
+        <!-- Purple Header
+        <div class="edge-header" id="note">
         </div> -->
 
         <div class="col-md-11">
-                   
+
     <br /><hr />
- <br/> 
+ <br/>
                     <!--Welcome Jumbotron-->
                     <div class="jumbotron row" id="note">
 
                     <div id="myDIV" class="header col-sm-6" >
                     <h2 class="h2-responsive">Welcome <?php echo  $_SESSION['username'];?>
-                    
-                    <small>  
+
+                    <small>
                      <a id="bell" onclick="showNotification('<?php echo $no;?>')" data-toggle="" title="" data-placement="" >
-                      <i class="fa fa-bell-o blue-text" aria-hidden="true"></i> 
-                       <?php 
+                      <i class="fa fa-bell-o blue-text" aria-hidden="true"></i>
+                       <?php
                          if($no>0)
                           echo "<span id='bage' class='badge'>".$no."</span>"
                        ?>
@@ -118,7 +123,7 @@ $toNotifyStudent=array();
                     <p class="lead">Date       : <?php  echo date('d/m/Y');?> <br />
                                     Day        :  <?php echo jddayofweek ( cal_to_jd(CAL_GREGORIAN, date("m"),date("d"), date("Y")) , 1 ); ?>
                                     <br />Attendance :  <?php  echo $attendance;?>
-                    
+
                    </p>
                      <!-- this will add the panel for input for notes-->
                     <?php
@@ -127,17 +132,17 @@ $toNotifyStudent=array();
                     </div><!--/.Welcome Jumbotron -->
 
     <br /><hr />
- <br/> 
+ <br/>
                     <!-- Schedule container -->
                     <div class="jumbotron row" id="schedule">
                     <h3 class="h-responsive">#Your Schedule</h3><hr />
                     <center><img src="../img/schedule.jpg"  class="img-responsive" style="height:auto;"> </center>
                     </div>
 
-        
+
 
     <br /><hr />
-    <br/> 
+    <br/>
                     <!--Attendance Jumbotron-->
                     <div class="jumbotron row" id="attendance">
                     <h3 class="h3-responsive">#Attendance</h3><hr />
@@ -152,9 +157,9 @@ $toNotifyStudent=array();
                               <a class="btn btn-info" href="TakeAttendance.php">Take</a>
                           </div>
                      <!--/.Panel
-                  
+
                   <div class="col-sm-1"></div>
-                 
+
                       <div class="col-sm-1"></div>
                     <!--Panel1
                     <div class="card col-sm-4 hoverable">
@@ -165,16 +170,16 @@ $toNotifyStudent=array();
                     <a class="btn btn-primary" href="TakeAttendance.php">Take</a>
                     </div>-->
                     </div>
-                   
+
                     </div><!--/. Attendance Jumbotron-->
-                    
+
 
                       <br /><hr />
-                      <br/> 
+                      <br/>
                     <!--Detention Jumbotron-->
                     <div class="jumbotron row" id="detention">
                     <h3 class="h3-responsive">#Detention</h3><hr />
-        
+
                       <div class="col-sm-1"></div>
                           <!--Panel1-->
                           <div class="card col-sm-10 hoverable">
@@ -185,11 +190,11 @@ $toNotifyStudent=array();
                               <a class="btn btn-primary" href="DetensionList.php">Set</a>
                           </div>
                      <!--/.Panel-->
-                  
+
                   <div class="col-sm-1"></div>
-                  
+
                     </div><!--/. Attendance Jumbotron-->
-                    
+
         </div>
 
 
@@ -198,12 +203,12 @@ $toNotifyStudent=array();
    <?php
     addFooter();
    ?>
-     
+
 </div>
 
 
 
-     
+
 <!-- SCRIPTS Starts -->
 <?php
 //this will load the essential bootstrap js files
@@ -212,8 +217,8 @@ $toNotifyStudent=array();
     <script type="text/javascript" src="../js/adminDash.js"></script>
 
           <script>
-               
-        
+
+
   $(document).ready(function(){
  // Popovers Initialization
 
@@ -252,12 +257,12 @@ function LoadByAjax(divID,fileName){
                    document.getElementById(divID).innerHTML = xmlHttp.responseText;
                }
            };
-         
+
            xmlHttp.open('GET',fileName,true);
            xmlHttp.send();
  }
 
- 
+
 function showNotification(limit){
  // $("#bell").click(function(){
      //$('#noti').toggle(function(){
@@ -267,31 +272,31 @@ function showNotification(limit){
      //  limit=2;
      $('#showNoti').toggle();
      facultyId= $('#noti').text()
-     LoadByAjax('showNoti','../notification/loadNotification.php?facultyId='+facultyId+'&tableName=facultynotification'); 
+     LoadByAjax('showNoti','../notification/loadNotification.php?facultyId='+facultyId+'&tableName=facultynotification');
  // });
 }
 /*
 
 function LoadByAjax(divID,fileName){
-   
+
   var xmlHttp = new XMLHttpRequest();
   xmlHttp.onreadystatechange = function(){
                if(xmlHttp.readyState == 4 && xmlHttp.status==200){
-                
+
                     // $('#bell').attr('data-content',xmlHttp.responseText);
                    document.getElementById('showNoti').innerHTML = xmlHttp.responseText;
                    //  document.getElementById('showNoti').innerHTMl=xmlHttp.responseText;
                //  alert(xmlHttp.responseText);
                  }
            };
-         
+
            xmlHttp.open('GET',fileName,true);
            xmlHttp.send();
  }/*
 */
 </script>
  </body>
-</html>    
+</html>
 
 <?php
  }//if admin

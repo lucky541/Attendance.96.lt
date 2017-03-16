@@ -13,7 +13,7 @@ session_start();
 <head>
 	<title>AMS-Admin</title>
 <?php
- // this will load the essential bootstrap files 
+ // this will load the essential bootstrap files
  loadBootstrapCSS();
 ?>
 
@@ -21,7 +21,7 @@ session_start();
 <link rel="stylesheet" href="../css/w3Css.css">
 
  <style>
-         
+
           .blueIcon{
             color: #2684db;
           }
@@ -30,28 +30,32 @@ session_start();
           }
         </style>
 
- </head>  
+ </head>
 
 <body onload="myFunction()" style="margin:0;">
 
-<div id="loader"></div>
+<div id="loader">  <center id="loading" class="blue-text">
+  <i class="fa fa-spinner fa-spin fa-5x fa-fw"></i>
+   <span class="sr-only">Loading...</span>
+  </center>
+</div>
 
 <div style="display:none;" id="myDiv">
 
-<?php 
+<?php
   $sideNavArray = array('Home'=>'index.php',
              'Home'=>'index.php',
             'Notes'=>'index.php',
             'Faculties'=>'Faculties.php',
-           
+
             'Contacts'=>'Contacted.php',
               'Feedback'=>'ViewFeedback.php',
              'Log Out'=>'../logMeOut.php');
-addSideNav($sideNavArray,'index.php'); 
+addSideNav($sideNavArray,'index.php');
   ?>
 
  <div class="col-md-12">
-         
+
                       <div class="edge-header" style="background-color: #2684db;"></div>
 
                         <!-- Main Container -->
@@ -68,25 +72,25 @@ addSideNav($sideNavArray,'index.php');
                         <form action="AddFaculty.php" method="post">
 
                         <h5 class="h5-responsive">Basic Informations</h5>
-                             
+
                         <div class="md-form">
                         <i class="fa fa-user-plus prefix blueIcon"></i>
                         <input type="text" id="form1" class="form-control" name="faculty_name" required >
                         <label for="form1">Full Name</label>
                         </div>
-                        
+
                         <!--Enroll  validation-->
                         <h5 class="h5-responsive">Enroll No.</h5>
                         <div class="md-form">
                         <i class="fa fa-envelope prefix blueIcon"></i>
                         <input type="text" id="form2" class="form-control " onkeyup="checkEnroll(this.value)" name="faculty_enroll" required>
                         <label for="form2" data-error="wrong" data-success="right">Enroll No.</label>
-                          
-                         
+
+
                             <div id="message" ></div>
-                           
+
                         </div>
-                        
+
                         <!--Dept validation-->
                         <h5 class="h5-responsive">Department</h5>
                         <div class="md-form" style="margin-left:50px; ">
@@ -98,14 +102,14 @@ addSideNav($sideNavArray,'index.php');
                             <option>E_I</option>
                             </select>
                        </div>
-                    
+
                      <!--Enroll  validation-->
                         <h5 class="h5-responsive">Assign Subject</h5>
                         <div class="md-form">
                         <i class="fa fa-envelope prefix blueIcon"></i>
                         <input type="text" id="form7" class="form-control " name="assigned_subjet" required>
                         <label for="form7" data-error="wrong" data-success="right">subject code</label>
-                         
+
                         <!--Email validation-->
                         <h5 class="h5-responsive">Temporary Password</h5>
                         <div class="md-form">
@@ -127,14 +131,14 @@ addSideNav($sideNavArray,'index.php');
        </div><!-- this div sidePage containe ends -->
 
 
-              
-  
+
+
 </div>
 
 <?php
     addFooter();
    ?>
-     
+
 <!-- SCRIPTS Starts -->
 <?php
 //this will load the essential bootstrap js files
@@ -143,7 +147,7 @@ addSideNav($sideNavArray,'index.php');
     <script type="text/javascript" src="js/adminDash.js"></script>
 
           <script>
-           
+
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
@@ -154,9 +158,9 @@ $(document).ready(function(){
       event.preventDefault();
 
       // Store hash
-      /*Assume that the current URL http://www.example.com/test.htm#part2: 
+      /*Assume that the current URL http://www.example.com/test.htm#part2:
        var x = location.hash;
-       
+
       The result of x will be: #part2
       */
       var hash = this.hash;
@@ -166,7 +170,7 @@ $(document).ready(function(){
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 700, function(){
-   
+
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
@@ -180,23 +184,23 @@ $(document).ready(function(){
     LoadByAjax('message','validateEnroll.php?enroll='+str);
  }
 
- 
+
  function LoadByAjax(divID,fileName){
-  
+
   var xmlHttp = new XMLHttpRequest();
   xmlHttp.onreadystatechange = function(){
                if(xmlHttp.readyState == 4 && xmlHttp.status==200){
                    document.getElementById(divID).innerHTML = xmlHttp.responseText;
                }
            };
-         
+
            xmlHttp.open('GET',fileName,true);
            xmlHttp.send();
  }
 
   </script>
  </body>
-</html>    
+</html>
 
 
 <?php
@@ -212,22 +216,22 @@ $(document).ready(function(){
          $enroll_year= date('Y');
                                                       // 1            2          3          4           5              6       7        8      9
   $addFacultyQuery = "INSERT INTO valid_users_list (enroll_no, username, password, enroll_year, studing_year, department,semester,section, role) VALUES('{$faculty_enroll}','{$faculty_name}','{$faculty_password}',{$enroll_year},'NA','{$faculty_dept}','NA','NA','teacher')";
-  
-  $assignedSubject = "UPDATE subject_table SET tought_by = '{$faculty_enroll}' WHERE subject_code = '{$assignedSubjetCode}' 
+
+  $assignedSubject = "UPDATE subject_table SET tought_by = '{$faculty_enroll}' WHERE subject_code = '{$assignedSubjetCode}'
                       AND for_department = '{$faculty_dept}'";
   $dbConnection->query($assignedSubject);
 
   if($dbConnection->query($addFacultyQuery) === TRUE){
-     header('Location: AddFaculty.php');  
+     header('Location: AddFaculty.php');
      }else{
        echo $dbConnection->error;
      }
    }
- 
+
  }//if admin
 else{
    $_SESSION['name']="";
  session_destroy();
  header("Location: ../index.php");
 }
-?>  
+?>

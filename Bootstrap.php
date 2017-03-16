@@ -1,9 +1,9 @@
-<?php 
+<?php
 function loadBootstrapCSS(){
    echo '  <meta name="viewport" content="width=device-width,initial-scale=1"/>
 
   <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
 
     <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -19,10 +19,19 @@ function loadBootstrapCSS(){
                  width: 100%;
                  height: 100%;
                  z-index: 100%;
-                 background: url("../img/amsLogoLoding2.gif") no-repeat center center;                
+              /*   background: url("../img/amsLogoLoding2.gif") no-repeat center center;         */
             }
-           
-          
+
+       #loading{
+         margin-top:25%;
+       }
+
+       @media (max-width: 768px) {
+         #loading{
+           margin-top:50%;
+         }
+       }
+
         </style>';
 }
 
@@ -43,8 +52,8 @@ function loadBootstrapJs(){
     <script type="text/javascript" src="../js/mdb.min.js"></script>
 
   <script>
-   
-               
+
+
     $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on("click", function(event) {
@@ -55,9 +64,9 @@ function loadBootstrapJs(){
       event.preventDefault();
 
       // Store hash
-      /*Assume that the current URL http://www.example.com/test.htm#part2: 
+      /*Assume that the current URL http://www.example.com/test.htm#part2:
        var x = location.hash;
-       
+
       The result of x will be: #part2
       */
       var hash = this.hash;
@@ -66,7 +75,7 @@ function loadBootstrapJs(){
       $("html, body").animate({
         scrollTop: $(hash).offset().top
       }, 700, function(){
-   
+
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
@@ -78,12 +87,12 @@ function loadBootstrapJs(){
    function w3_open() {
                  document.getElementById("mySidenav").style.display = "block";
                   $("body,html").css("position", "fixed");
-               
+
              }
                 function w3_close() {
-                    document.getElementById("mySidenav").style.display = "none";  
+                    document.getElementById("mySidenav").style.display = "none";
              $("body,html").css("position", "");
-            
+
                  }
 
 
@@ -92,19 +101,19 @@ function loadBootstrapJs(){
 
                         function myFunction() {
                             myVar = setTimeout(showPage, 1000);
-                           
+
                         }
 
                         function showPage() {
                           document.getElementById("loader").style.display = "none";
                           document.getElementById("myDiv").style.display = "block";
                         }
-               //end loadiner spinner 
+               //end loadiner spinner
 
 
   </script>
 ';
 
 }
- 
+
 ?>

@@ -8,7 +8,7 @@
  $role=$_SESSION['role'];
 //check if user is admin then only show the below content
  if(!strcmp($role,'admin')){
-  
+
 ?>
 
 <!DOCTYPE html>
@@ -17,7 +17,7 @@
   <title>AMS-Admin</title>
 
 <?php
- // this will load the essential bootstrap files 
+ // this will load the essential bootstrap files
  loadBootstrapCSS();
 ?>
 
@@ -25,7 +25,7 @@
 <link rel="stylesheet" href="../css/w3Css.css">
 
  <style>
-         
+
 
 .badge{
   background-color:gray;
@@ -42,15 +42,20 @@
 
         </style>
 
- </head>  
+ </head>
 
 <body onload="myFunction()" style="margin:0;" >
 
-<div id="loader"></div>
+<div id="loader">
+  <center id="loading" class="blue-text">
+  <i class="fa fa-spinner fa-spin fa-5x fa-fw"></i>
+   <span class="sr-only">Loading...</span>
+  </center>
+</div>
 
 <div style="display:none;" id="myDiv" class="view">
 
-<?php 
+<?php
 $result = $dbConnection->query("SELECT seen FROM contacted WHERE seen =0");
  $contacted=mysqli_num_rows($result);
 $result = $dbConnection->query("SELECT seen FROM feedback WHERE seen =0");
@@ -60,20 +65,20 @@ $result = $dbConnection->query("SELECT seen FROM feedback WHERE seen =0");
              'Faculties'=>'#faculty',
               'Feedback<span class="badge">'.$feedback.'</span>'=>'#feedback',
               'Contacts<span class="badge">'.$contacted.'</span>'=>'#contacts',
-             
+
               'option1'=>'#','option2'=>'#','option3'=>'#','option4'=>'#',
 
             'Log Out'=>'../logMeOut.php');
 
  addSideNav($sideNavArray,'#note');
 
- 
+
   ?>
 
         <div class="col-md-11">
-                   
+
     <hr />
- <br/> 
+ <br/>
                     <!--Welcome Jumbotron-->
                     <div class="jumbotron row" id="note">
 
@@ -82,10 +87,10 @@ $result = $dbConnection->query("SELECT seen FROM feedback WHERE seen =0");
                     <p class="lead">Date : <?php  echo date('d/m/Y');?> <br />
                                     Day :  <?php echo jddayofweek ( cal_to_jd(CAL_GREGORIAN, date("m"),date("d"), date("Y")) , 1 ); ?>
                    </p>
-                
+
                    <!-- this will add the panel for input for notes-->
                     <?php
-                    
+
                         NotesInput();
                     ?>
 
@@ -93,7 +98,7 @@ $result = $dbConnection->query("SELECT seen FROM feedback WHERE seen =0");
                     </div><!--/.Welcome Jumbotron -->
 
     <hr />
- <br/> 
+ <br/>
 
                   <!--Faculty Jumbotron-->
                   <div class="jumbotron row" id="faculty">
@@ -123,10 +128,10 @@ $result = $dbConnection->query("SELECT seen FROM feedback WHERE seen =0");
                   <!--/.Panel-->
 
                     <div class="col-sm-1"></div>
-        
+
               </div>
     <hr />
- <br/> 
+ <br/>
          <div class="jumbotron row " id="feedback" >
                   <h3 class="h3-responsive">Feedbacks</h3>
                       <hr />
@@ -137,20 +142,20 @@ $result = $dbConnection->query("SELECT seen FROM feedback WHERE seen =0");
                     if(!mysqli_num_rows($resultSet)){
                        $resultSet= $dbConnection->query("SELECT * FROM feedback  LIMIT 2");
                     }
-                       while($row = $resultSet->fetch_object()){ 
+                       while($row = $resultSet->fetch_object()){
                         $text= '<div class="addlightGray z-depth-1">
                               <h4 class=" h4-responsive">'.$row->name.'</h4>
                              <hr />  <p>'.$row->feedback.'</p>
-                             <p class=" text-xs-right">'.$row->date.'</p> 
+                             <p class=" text-xs-right">'.$row->date.'</p>
                               </div>
                               <br />'.$text;
                        }
                         echo $text;
-                        
+
                      ?>
                         <a class="blue-text " href="ViewFeedback.php"> show more </a>
                   </div><!--/. Faculty Jumbotron-->
-    
+
      <hr />
  <br />
     <div class="jumbotron row " id="contacts">
@@ -163,7 +168,7 @@ $result = $dbConnection->query("SELECT seen FROM feedback WHERE seen =0");
                         $resultSet= $dbConnection->query("SELECT * FROM contacted LIMIT 2");
 
                     }
-                       while($row = $resultSet->fetch_object()){ 
+                       while($row = $resultSet->fetch_object()){
                         $text= '<div class="addlightGray z-depth-1">
                               <h3 class="h3-responsive">#'.$row->subject.'</h3><hr />
                                <p>'.$row->message.'</p>
@@ -172,9 +177,9 @@ $result = $dbConnection->query("SELECT seen FROM feedback WHERE seen =0");
                               <br />'.$text;
                        }
                         echo $text;
-                   
+
                      ?>
-                       <a class="blue-text " href="Contacted.php"> show more </a> 
+                       <a class="blue-text " href="Contacted.php"> show more </a>
                   </div><!--/. Faculty Jumbotron-->
 
      <hr />
@@ -186,7 +191,7 @@ $result = $dbConnection->query("SELECT seen FROM feedback WHERE seen =0");
  </div>
 
 
-     
+
 <!-- SCRIPTS Starts -->
 
 <?php
@@ -196,8 +201,8 @@ $result = $dbConnection->query("SELECT seen FROM feedback WHERE seen =0");
     <script type="text/javascript" src="../js/adminDash.js"></script>
 
           <script>
-            
- 
+
+
 $(function(){
   enroll_no= '<?php echo $_SESSION['enroll_no'] ?>';
  loadNotes(enroll_no);
@@ -234,14 +239,14 @@ function LoadByAjax(divID,fileName){
                    document.getElementById(divID).innerHTML = xmlHttp.responseText;
                }
            };
-         
+
            xmlHttp.open('GET',fileName,true);
            xmlHttp.send();
  }
 
   </script>
  </body>
-</html>    
+</html>
 <?php
  }//if admin
 else{

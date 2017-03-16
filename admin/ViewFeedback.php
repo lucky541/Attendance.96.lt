@@ -13,7 +13,7 @@ include '../db/connection.php';
 <head>
   <title>AMS-Admin</title>
 <?php
- // this will load the essential bootstrap files 
+ // this will load the essential bootstrap files
  loadBootstrapCSS();
 ?>
 
@@ -29,23 +29,27 @@ include '../db/connection.php';
   }
 </style>
 
- </head>  
+ </head>
 
 <body onload="myFunction()" style="margin:0;">
 
-<div id="loader"></div>
+<div id="loader"><center id="loading" class="blue-text">
+  <i class="fa fa-spinner fa-spin fa-5x fa-fw"></i>
+   <span class="sr-only">Loading...</span>
+  </center>
+</div>
 
 <div style="display:none;" id="myDiv">
 
 
-<?php 
+<?php
   $sideNavArray = array('Home'=>'index.php',
             'Notes'=>'index.php',
             'Faculties'=>'Faculties.php',
              'Contacts'=>'Contacted.php',
               'Feedback'=>'#feedback',
              'Log Out'=>'../logMeOut.php');
-addSideNav($sideNavArray,'index.php'); 
+addSideNav($sideNavArray,'index.php');
 
   ?>
    <!--Faculty Jumbotron-->
@@ -56,42 +60,42 @@ addSideNav($sideNavArray,'index.php');
                      <?php
                      $text="";
                     $resultSet= $dbConnection->query("SELECT * FROM feedback");
-                       while($row = $resultSet->fetch_object()){ 
+                       while($row = $resultSet->fetch_object()){
                         $text= '<div class="addlightGray z-depth-1">
                               <h4 class=" h4-responsive">'.$row->name.'</h4>
                               <hr /> <p>'.$row->feedback.'</p>
-                               <div class=" text-xs-right">'.$row->date.'</div> 
+                               <div class=" text-xs-right">'.$row->date.'</div>
                               </div>
                              <hr />'.$text;
                        }
                         echo $text;
-                        
+
                       $dbConnection->query("UPDATE feedback set seen =1 WHERE 1");
                      ?>
-                        
+
                   </div><!--/. Faculty Jumbotron-->
 
-   
+
       <?php
     addFooter();
    ?>
-     
+
 </div><!-- this div sidePage containe ends -->
 
 
  </div>
 
 
-     
+
 <!-- SCRIPTS Starts -->
 <?php
 //this will load the essential bootstrap js files
  loadBootstrapJs();
 ?>
     <script type="text/javascript" src="../js/adminDash.js"></script>
- 
+
           <script>
-          
+
 
  function LoadByAjax(divID,fileName){
  // alert(fileName)
@@ -101,7 +105,7 @@ addSideNav($sideNavArray,'index.php');
                    document.getElementById(divID).innerHTML = xmlHttp.responseText;
                }
            };
-         
+
            xmlHttp.open('GET',fileName,true);
            xmlHttp.send();
  }
@@ -109,7 +113,7 @@ addSideNav($sideNavArray,'index.php');
 
   </script>
  </body>
-</html>    
+</html>
 <?php
  }//if admin
 else{
@@ -118,4 +122,3 @@ else{
  header("Location: ../index.php");
 }
 ?>
-

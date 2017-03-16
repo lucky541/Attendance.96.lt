@@ -12,7 +12,7 @@ include '../sideNav.php';
 <head>
 	<title>AMS-Faculty</title>
 <?php
- // this will load the essential bootstrap files 
+ // this will load the essential bootstrap files
  loadBootstrapCSS();
 ?>
 <link href="../css/TakeAttendance.css" rel="stylesheet" />
@@ -21,26 +21,31 @@ include '../sideNav.php';
 
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
  <style>
-           
-          
+
+
         </style>
 
- </head>  
+ </head>
 
 <body onload="myFunction()" style="margin:0;">
 
-<div id="loader"></div>
+<div id="loader">
+  <center id="loading" class="blue-text">
+  <i class="fa fa-spinner fa-spin fa-4x fa-fw"></i>
+   <span class="sr-only">Loading...</span>
+ </center>
+</div>
 
 <div style="display:none;" id="myDiv">
 
-<?php 
+<?php
   $sideNavArray = array('Home'=>'index.php',
             'Notes'=>'index.php',
             'Schedule'=>'index.php',
             'Attendance'=>'TakeAttendance.php',
             'DetentionList'=>'#Detention',
              'Log Out'=>'../logMeOut.php');
-addSideNav($sideNavArray,'index.php'); 
+addSideNav($sideNavArray,'index.php');
   ?>
 
  <br />
@@ -49,7 +54,7 @@ addSideNav($sideNavArray,'index.php');
     <div class="jumbotron ">
     <h3 class="h2-responsive" id="Detention"><b>#Detention List</b></h3>
     <br />
-   
+
     <!-- CLASS LIST WILL COME IN THIS DIV-->
     <div id="selectClassList" class="row"></div>
    <br />
@@ -68,11 +73,11 @@ addSideNav($sideNavArray,'index.php');
 //this will load the essential bootstrap js files
  loadBootstrapJs();
 ?>
-   
+
     <script type="text/javascript" src="../js/adminDash.js"></script>
 
           <script>
-           
+
   $(document).ready(function(){
 
   criterial=0;  this.section='';
@@ -95,17 +100,17 @@ function selectDept(criterial){
 // give classes available for the faculty
 function loadThisToo(){
           LoadByAjax('selectClassList','files.php');
-          
+
 }
  function loadTableForSectionA(){
        this.section = 'A';
        LoadByAjax('loadTable','Detention_For_Section_A.php');
        $('select').val(criterial)
-       
+
  }
 
  function loadTableForSectionB(){
-         this.section = 'B';  
+         this.section = 'B';
        LoadByAjax('loadTable','Detention_For_Section_B.php');
  }
 
@@ -129,15 +134,15 @@ function sendNotification(){
                    document.getElementById(divID).innerHTML = xmlHttp.responseText;
                }
            };
-         
+
            xmlHttp.open('GET',fileName,true);
            xmlHttp.send();
  }
 
- 
+
   </script>
  </body>
-</html>    
+</html>
 
 <?php
  }//if admin

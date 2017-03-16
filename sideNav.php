@@ -17,14 +17,14 @@ background: url("http://smashingyolo.com/wp-content/uploads/2014/05/Best-Website
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-} 
+}
 .w3-sidenav a:hover{
   background:transparent;
 }
 </style>
    <!-- Side navigation starts form here-->
 <nav class="w3-sidenav bg  w3-collapse w3-white w3-card-2 w3-animate-left sidenav z-depth-5" style="width:240px;  z-index:10000;" id="mySidenav">
-  
+
 
   <!-- side nav before logo add some style-->
 <div>
@@ -38,7 +38,7 @@ background: url("http://smashingyolo.com/wp-content/uploads/2014/05/Best-Website
           <hr />
         <!--menu items
          <a href="AdminDash.php" class=" waves-effect " onclick="w3_close()">Home</a><hr class="my-2">-->
-        <center> 
+        <center>
      <?php
            foreach($sideNavArray as $key => $value) {
                   echo " <a href='{$value}' class='waves-effect' onclick='w3_close()'>{$key}</a><hr class='my-2'>";
@@ -49,7 +49,7 @@ background: url("http://smashingyolo.com/wp-content/uploads/2014/05/Best-Website
 
       </center>
        <!-- <a href="Faculties.php" class=" waves-effect" onclick="w3_close()">Faculties</a> <hr class="my-2">
-        <a href="#class" class=" waves-effect" onclick="w3_close()">Classes</a><hr /> 
+        <a href="#class" class=" waves-effect" onclick="w3_close()">Classes</a><hr />
         <a href="#" class=" waves-effect"onclick="w3_close()">Database Settings</a><hr />
         <a href="#" class=" waves-effect" onclick="w3_close()">Settings</a><hr />
          <a href="logMeout.php" class=" waves-effect" onclick="w3_close()">Log Out</a><hr />-->
@@ -58,26 +58,26 @@ background: url("http://smashingyolo.com/wp-content/uploads/2014/05/Best-Website
 
 <!-- this dic containe the entire page apart form sidebar -->
 <div class="w3-main" id="sidePage" style="margin-left:310px;" >
-    
+
         <!-- hamburger icon starts-->
-        <header class="w3-container navbar-fixed-top Add-box-shadow" style=" background-color:  #2684db; width: 50px;" id="ham">
-        <span id="Hamburg" class="w3-opennav w3-xlarge w3-hide-large" onclick="w3_open()"><i class="fa fa-bars" aria-hidden="true" style="color:white;" ></i></span>
+        <header class="w3-container navbar-fixed-top Add-box-shadow" style=" background:transparent; width: 50px;" id="ham">
+        <span id="Hamburg" class="w3-opennav w3-xlarge w3-hide-large" onclick="w3_open()"><img src="../img/icons/menu2.png"></span>
         </header>
         <!-- hamburger icon starts-->
 
-        <!-- Purple Header 
-        <div class="edge-header" id="note">  
+        <!-- Purple Header
+        <div class="edge-header" id="note">
         </div> -->
 
-    
-    <?php  
+
+    <?php
   }
-   
+
   function addFooter(){
       echo '<!--Footer-->
     <footer class="page-footer center-on-small-only col-sm-12">
 
-        
+
         <!--Call to action-->
         <div class="call-to-action">
             <h4 class="h4-responsive">Attendance Management System</h4>

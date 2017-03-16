@@ -12,7 +12,7 @@ include '../sideNav.php';
 <head>
 	<title>AMS-Admin</title>
 <?php
- // this will load the essential bootstrap files 
+ // this will load the essential bootstrap files
  loadBootstrapCSS();
 ?>
 
@@ -22,27 +22,31 @@ include '../sideNav.php';
 
 
 
- </head>  
+ </head>
 
 <body onload="myFunction()" style="margin:0;">
 
-<div id="loader"></div>
+<div id="loader"><center id="loading" class="blue-text">
+  <i class="fa fa-spinner fa-spin fa-5x fa-fw"></i>
+   <span class="sr-only">Loading...</span>
+  </center>
+</div>
 
 <div style="display:none;" id="myDiv">
 
 
-<?php 
+<?php
   $sideNavArray = array('Home'=>'index.php',
               'Notes'=>'index.php',
             'Faculties'=>'#',
              'Contacts'=>'Contacted.php',
               'Feedback'=>'ViewFeedback.php',
              'Log Out'=>'../logMeOut.php');
-addSideNav($sideNavArray,'index.php'); 
+addSideNav($sideNavArray,'index.php');
   ?>
 
 <div class="col-md-11 " style="height:700px; overflow-y:scroll;">
-           
+
 <!-- end of jumbotron1-->
     <div class="jumbotron ">
       <h4 class="h4-responsive"><b>#Faculties List</b></h4>
@@ -52,7 +56,7 @@ addSideNav($sideNavArray,'index.php');
           </lable>
         <!-- Dropdown-->
         <select class="selectpicker col-sm-4 hoverable" >
-         
+
         <option>View ALL</option>
         <option >CS</option>
         <option>IT</option>
@@ -60,14 +64,14 @@ addSideNav($sideNavArray,'index.php');
         <option>E_I</option>
         </select>
        <br /><hr />
-         
+
          <!-- TABLE WILL LOAD BY AJAX IN THIS DIV-->
           <div id ="loadedTable">
           </div>
-   
+
  </div><!-- end of jumbotron1-->
-        
-   
+
+
 </div><!-- this div sidePage containe ends -->
 
 
@@ -89,8 +93,8 @@ addSideNav($sideNavArray,'index.php');
                                <div class="md-form ">
                                         <i class="fa fa-envelope prefix" aria-hidden="true" style=" color:#33b5e5 "></i>
                                             <input type="email" id="form6" class="form-control" required>
-                                        </div> 
-                               
+                                        </div>
+
                                    <div class="md-form">
                                              <i class="fa fa-pencil prefix" aria-hidden="true" style=" color:#33b5e5 "></i>
                                                 <textarea type="text" id="form8" class="md-textarea"></textarea>
@@ -104,7 +108,7 @@ addSideNav($sideNavArray,'index.php');
         </div>
         <!--/.Content-->
     </div>
-    
+
 </div> </div>
 
 
@@ -114,30 +118,30 @@ addSideNav($sideNavArray,'index.php');
       <?php
     addFooter();
    ?>
-     
+
  </div>
 
 
-     
+
 <!-- SCRIPTS Starts -->
 <?php
 //this will load the essential bootstrap js files
  loadBootstrapJs();
 ?>
     <script type="text/javascript" src="../js/adminDash.js"></script>
- 
+
           <script>
-               
-        
+
+
   $(document).ready(function(){
-  
+
   $('select').on('change', function (e) {
-    
+
     var valueSelected = this.value;
      if(valueSelected === 'View ALL')
     {    LoadByAjax('loadedTable','FacultyTable.php');
     }else{
-        
+
         LoadTable(valueSelected);
     }
 });
@@ -150,7 +154,7 @@ function selectDept(str){
   if(str === 'View ALL')
     {    LoadByAjax('loadedTable','FacultyTable.php');
     }else{
-        
+
         LoadTable(str);
     }
 }
@@ -165,7 +169,7 @@ function LoadTable(dept){
 
 function openNotificationForm(facultyId){
  $('#form6').val(facultyId);
- 
+
 }
 function sendNotification(){
   sendTo = $('#form6').val();
@@ -185,7 +189,7 @@ window.setTimeout(function(){
                    document.getElementById(divID).innerHTML = xmlHttp.responseText;
                }
            };
-         
+
            xmlHttp.open('GET',fileName,true);
            xmlHttp.send();
  }
@@ -193,7 +197,7 @@ window.setTimeout(function(){
 
   </script>
  </body>
-</html>    
+</html>
 <?php
  }//if admin
 else{

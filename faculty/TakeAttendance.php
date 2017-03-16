@@ -13,7 +13,7 @@ include '../Bootstrap.php';
 <head>
   <title>AMS-Faculty</title>
 <?php
- // this will load the essential bootstrap files 
+ // this will load the essential bootstrap files
  loadBootstrapCSS();
 ?>
 <link href="../css/TakeAttendance.css" rel="stylesheet" />
@@ -22,7 +22,7 @@ include '../Bootstrap.php';
 <link rel="stylesheet" href="../css/w3Css.css">
 
  <style>
-          
+
           /* The snackbar - position it at the bottom and in the middle of the screen */
 #snackbar {
     visibility: hidden; /* Hidden by default. Visible on click */
@@ -43,7 +43,7 @@ include '../Bootstrap.php';
 #snackbar.show {
     visibility: visible; /* Show the snackbar */
 
-/* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+/* Add animation: Take 0.5 seconds to fade in and out the snackbar.
 However, delay the fade out process for 2.5 seconds */
     -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
     animation: fadein 0.5s, fadeout 0.5s 2.5s;
@@ -51,7 +51,7 @@ However, delay the fade out process for 2.5 seconds */
 
 /* Animations to fade the snackbar in and out */
 @-webkit-keyframes fadein {
-    from {bottom: 0; opacity: 0;} 
+    from {bottom: 0; opacity: 0;}
     to {bottom: 30px; opacity: 1;}
 }
 
@@ -61,7 +61,7 @@ However, delay the fade out process for 2.5 seconds */
 }
 
 @-webkit-keyframes fadeout {
-    from {bottom: 30px; opacity: 1;} 
+    from {bottom: 30px; opacity: 1;}
     to {bottom: 0; opacity: 0;}
 }
 
@@ -88,24 +88,29 @@ However, delay the fade out process for 2.5 seconds */
 
         </style>
 
-      
 
- </head>  
+
+ </head>
 
 <body onload="myFunction()" style="margin:0;">
 
-<div id="loader"></div>
+<div id="loader">
+  <center id="loading" class="blue-text">
+  <i class="fa fa-spinner fa-spin fa-5x fa-fw"></i>
+   <span class="sr-only">Loading...</span>
+  </center>
+</div>
 
 <div style="display:none;" id="myDiv">
 
-<?php 
+<?php
   $sideNavArray = array('Home'=>'index.php',
             'Notes'=>'index.php',
             'Schedule'=>'index.php',
             'Attendance'=>'#Attendance',
             'DetentionList'=>'DetensionList.php',
              'Log Out'=>'../logMeOut.php');
-addSideNav($sideNavArray,'index.php'); 
+addSideNav($sideNavArray,'index.php');
   ?>
 
  <br />
@@ -114,8 +119,8 @@ addSideNav($sideNavArray,'index.php');
     <div class="jumbotron ">
     <h3 class="h3-responsive" id="Attendance"><b>#Take Attendance</b></h3>
     <br />
-    <hr />    
-    <br/> 
+    <hr />
+    <br/>
 
 
 
@@ -149,7 +154,7 @@ addSideNav($sideNavArray,'index.php');
     <!-- CLASS LIST WILL COME IN THIS DIV-->
     <div id="selectClassList" class="row"></div>
    <br />
-    <hr />    
+    <hr />
     <!--
 <div class="green-text">
  </div> -->
@@ -165,10 +170,10 @@ addSideNav($sideNavArray,'index.php');
   top:250px;
   margin: 5px;
   padding: 10px;
-    max-width: 350px; 
-   
+    max-width: 350px;
+
 ">
- 
+
 </div>
 
 </div><!-- end of jumbotron1-->
@@ -178,9 +183,9 @@ addSideNav($sideNavArray,'index.php');
 //this will load the essential bootstrap js files
  loadBootstrapJs();
 ?>
-    
+
           <script>
-              
+
 
 $(document).ready(function(){
   loadThisToo();
@@ -198,10 +203,10 @@ function studenDetailes(enroll,attendance,name){
    }
   function closeStudentDetailes(){
     $('#studenDetailesDiv').hide();
-  } 
+  }
 
 function loadThisToo(){
- 
+
           LoadByAjax('selectClassList','files.php');
 }
 var section;
@@ -213,7 +218,7 @@ var section;
  function loadTableForSectionB(section){
        this.section=section;
        LoadByAjax('loadTable','Section_B.php?value=checked');
-       
+
  }
 
 function callEditAttendance(section){
@@ -226,14 +231,14 @@ function viewAttendance(section){
   LoadByAjax('loadTable','ViewAttendance.php?section='+section);
 }
  function LoadByAjax(divID,fileName){
- 
+
   var xmlHttp = new XMLHttpRequest();
   xmlHttp.onreadystatechange = function(){
                if(xmlHttp.readyState == 4 && xmlHttp.status==200){
                    document.getElementById(divID).innerHTML = xmlHttp.responseText;
                }
            };
-         
+
            xmlHttp.open('GET',fileName,true);
            xmlHttp.send();
  }
@@ -244,8 +249,8 @@ function CheckboForSectionA(){
     var c=document.getElementById('checkbox0');
   if (c.checked) {
    LoadByAjax('loadTable','Section_A.php?value=checked');
-  
-  } else { 
+
+  } else {
   LoadByAjax('loadTable','Section_A.php?value=unchecked');
   }
 }
@@ -253,8 +258,8 @@ function CheckboForSectionA(){
     var c=document.getElementById('checkbox0');
   if (c.checked) {
    LoadByAjax('loadTable','Section_B.php?value=checked');
-  
-  } else { 
+
+  } else {
   LoadByAjax('loadTable','Section_B.php?value=unchecked');
   }
 }
@@ -262,7 +267,7 @@ function CheckboForSectionA(){
 
   </script>
  </body>
-</html>    
+</html>
 
 <?php
  }//if admin
