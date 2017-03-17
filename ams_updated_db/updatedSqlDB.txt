@@ -1,0 +1,1220 @@
+-- phpMyAdmin SQL Dump
+-- version 4.5.1
+-- http://www.phpmyadmin.net
+--
+-- Host: 127.0.0.1
+-- Generation Time: Mar 17, 2017 at 12:10 PM
+-- Server version: 10.1.19-MariaDB
+-- PHP Version: 7.0.13
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `amsdatabase`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `3co252`
+--
+
+CREATE TABLE `3co252` (
+  `enroll_no` varchar(10) NOT NULL,
+  `section` varchar(1) NOT NULL,
+  `attendance` int(11) NOT NULL,
+  `edit` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `3co252`
+--
+
+INSERT INTO `3co252` (`enroll_no`, `section`, `attendance`, `edit`) VALUES
+('de14001', 'A', 0, 0),
+('de14002', 'A', 0, 0),
+('de14003', 'A', 0, 0),
+('de14004', 'A', 0, 0),
+('de14005', 'A', 0, 0),
+('de14006', 'A', 0, 0),
+('de14007', 'A', 0, 0),
+('de14008', 'A', 0, 0),
+('de14009', 'A', 0, 0),
+('de14011', 'B', 0, 0),
+('de14012', 'B', 0, 0),
+('de14013', 'B', 0, 0),
+('de14014', 'B', 0, 0),
+('de14015', 'B', 0, 0),
+('de14016', 'B', 0, 0),
+('de14017', 'B', 0, 0),
+('de14018', 'B', 0, 0),
+('de14019', 'B', 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `3co253`
+--
+
+CREATE TABLE `3co253` (
+  `enroll_no` varchar(10) NOT NULL,
+  `section` varchar(1) NOT NULL,
+  `attendance` int(11) NOT NULL,
+  `edit` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `3co253`
+--
+
+INSERT INTO `3co253` (`enroll_no`, `section`, `attendance`, `edit`) VALUES
+('de14001', 'A', 0, 0),
+('de14002', 'A', 0, 0),
+('de14003', 'A', 0, 0),
+('de14004', 'A', 0, 0),
+('de14005', 'A', 0, 0),
+('de14006', 'A', 0, 0),
+('de14007', 'A', 0, 0),
+('de14008', 'A', 0, 0),
+('de14009', 'A', 0, 0),
+('de14011', 'B', 0, 0),
+('de14012', 'B', 0, 0),
+('de14013', 'B', 0, 0),
+('de14014', 'B', 0, 0),
+('de14015', 'B', 0, 0),
+('de14016', 'B', 0, 0),
+('de14017', 'B', 0, 0),
+('de14018', 'B', 0, 0),
+('de14019', 'B', 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `3co254`
+--
+
+CREATE TABLE `3co254` (
+  `enroll_no` varchar(10) NOT NULL,
+  `section` varchar(1) NOT NULL,
+  `attendance` int(11) NOT NULL,
+  `edit` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `3co254`
+--
+
+INSERT INTO `3co254` (`enroll_no`, `section`, `attendance`, `edit`) VALUES
+('de14001', 'A', 0, 0),
+('de14002', 'A', 0, 0),
+('de14003', 'A', 0, 0),
+('de14004', 'A', 0, 0),
+('de14005', 'A', 0, 0),
+('de14006', 'A', 0, 0),
+('de14007', 'A', 0, 0),
+('de14008', 'A', 0, 0),
+('de14009', 'A', 0, 0),
+('de14011', 'B', 0, 0),
+('de14012', 'B', 0, 0),
+('de14013', 'B', 0, 0),
+('de14014', 'B', 0, 0),
+('de14015', 'B', 0, 0),
+('de14016', 'B', 0, 0),
+('de14017', 'B', 0, 0),
+('de14018', 'B', 0, 0),
+('de14019', 'B', 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `3co255`
+--
+
+CREATE TABLE `3co255` (
+  `enroll_no` varchar(10) NOT NULL,
+  `section` varchar(1) NOT NULL,
+  `attendance` int(11) NOT NULL,
+  `edit` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `3co255`
+--
+
+INSERT INTO `3co255` (`enroll_no`, `section`, `attendance`, `edit`) VALUES
+('de14001', 'A', 0, 0),
+('de14002', 'A', 0, 0),
+('de14003', 'A', 0, 0),
+('de14004', 'A', 0, 0),
+('de14005', 'A', 0, 0),
+('de14006', 'A', 0, 0),
+('de14007', 'A', 0, 0),
+('de14008', 'A', 0, 0),
+('de14009', 'A', 0, 0),
+('de14011', 'B', 0, 0),
+('de14012', 'B', 0, 0),
+('de14013', 'B', 0, 0),
+('de14014', 'B', 0, 0),
+('de14015', 'B', 0, 0),
+('de14016', 'B', 0, 0),
+('de14017', 'B', 0, 0),
+('de14018', 'B', 0, 0),
+('de14019', 'B', 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `4co252`
+--
+
+CREATE TABLE `4co252` (
+  `enroll_no` varchar(10) NOT NULL,
+  `section` varchar(1) NOT NULL,
+  `attendance` int(11) NOT NULL,
+  `edit` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `4co252`
+--
+
+INSERT INTO `4co252` (`enroll_no`, `section`, `attendance`, `edit`) VALUES
+('de13001', 'A', 0, 0),
+('de13002', 'A', 0, 0),
+('de13003', 'A', 0, 0),
+('de13004', 'A', 0, 0),
+('de13005', 'A', 0, 0),
+('de13006', 'A', 0, 0),
+('de13007', 'A', 0, 0),
+('de13008', 'A', 0, 0),
+('de13009', 'A', 0, 0),
+('de13011', 'B', 0, 0),
+('de13012', 'B', 0, 0),
+('de13013', 'B', 0, 0),
+('de13014', 'B', 0, 0),
+('de13015', 'B', 0, 0),
+('de13016', 'B', 0, 0),
+('de13017', 'B', 0, 0),
+('de13018', 'B', 0, 0),
+('de13019', 'B', 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `4co253`
+--
+
+CREATE TABLE `4co253` (
+  `enroll_no` varchar(10) NOT NULL,
+  `section` varchar(1) NOT NULL,
+  `attendance` int(11) NOT NULL,
+  `edit` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `4co253`
+--
+
+INSERT INTO `4co253` (`enroll_no`, `section`, `attendance`, `edit`) VALUES
+('de13001', 'A', 0, 0),
+('de13002', 'A', 0, 0),
+('de13003', 'A', 0, 0),
+('de13004', 'A', 0, 0),
+('de13005', 'A', 0, 0),
+('de13006', 'A', 0, 0),
+('de13007', 'A', 0, 0),
+('de13008', 'A', 0, 0),
+('de13009', 'A', 0, 0),
+('de13011', 'B', 0, 0),
+('de13012', 'B', 0, 0),
+('de13013', 'B', 0, 0),
+('de13014', 'B', 0, 0),
+('de13015', 'B', 0, 0),
+('de13016', 'B', 0, 0),
+('de13017', 'B', 0, 0),
+('de13018', 'B', 0, 0),
+('de13019', 'B', 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `4co254`
+--
+
+CREATE TABLE `4co254` (
+  `enroll_no` varchar(10) NOT NULL,
+  `section` varchar(1) NOT NULL,
+  `attendance` int(11) NOT NULL,
+  `edit` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `4co254`
+--
+
+INSERT INTO `4co254` (`enroll_no`, `section`, `attendance`, `edit`) VALUES
+('de13001', 'A', 0, 0),
+('de13002', 'A', 0, 0),
+('de13003', 'A', 0, 0),
+('de13004', 'A', 0, 0),
+('de13005', 'A', 0, 0),
+('de13006', 'A', 0, 0),
+('de13007', 'A', 0, 0),
+('de13008', 'A', 0, 0),
+('de13009', 'A', 0, 0),
+('de13011', 'B', 0, 0),
+('de13012', 'B', 0, 0),
+('de13013', 'B', 0, 0),
+('de13014', 'B', 0, 0),
+('de13015', 'B', 0, 0),
+('de13016', 'B', 0, 0),
+('de13017', 'B', 0, 0),
+('de13018', 'B', 0, 0),
+('de13019', 'B', 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `4co255`
+--
+
+CREATE TABLE `4co255` (
+  `enroll_no` varchar(10) NOT NULL,
+  `section` varchar(1) NOT NULL,
+  `attendance` int(11) NOT NULL,
+  `edit` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `4co255`
+--
+
+INSERT INTO `4co255` (`enroll_no`, `section`, `attendance`, `edit`) VALUES
+('de13001', 'A', 0, 0),
+('de13002', 'A', 0, 0),
+('de13003', 'A', 0, 0),
+('de13004', 'A', 0, 0),
+('de13005', 'A', 0, 0),
+('de13006', 'A', 0, 0),
+('de13007', 'A', 0, 0),
+('de13008', 'A', 0, 0),
+('de13009', 'A', 0, 0),
+('de13011', 'B', 0, 0),
+('de13012', 'B', 0, 0),
+('de13013', 'B', 0, 0),
+('de13014', 'B', 0, 0),
+('de13015', 'B', 0, 0),
+('de13016', 'B', 0, 0),
+('de13017', 'B', 0, 0),
+('de13018', 'B', 0, 0),
+('de13019', 'B', 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `amr2c1`
+--
+
+CREATE TABLE `amr2c1` (
+  `enroll_no` varchar(10) NOT NULL,
+  `section` varchar(1) NOT NULL,
+  `attendance` int(11) NOT NULL,
+  `edit` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `amr2c1`
+--
+
+INSERT INTO `amr2c1` (`enroll_no`, `section`, `attendance`, `edit`) VALUES
+('de16001', 'A', 0, 0),
+('de16002', 'A', 0, 0),
+('de16003', 'A', 0, 0),
+('de16004', 'A', 0, 0),
+('de16005', 'A', 0, 0),
+('de16006', 'A', 0, 0),
+('de16007', 'A', 0, 0),
+('de16008', 'A', 0, 0),
+('de16009', 'A', 0, 0),
+('de16011', 'B', 0, 0),
+('de16012', 'B', 0, 0),
+('de16013', 'B', 0, 0),
+('de16014', 'B', 0, 0),
+('de16015', 'B', 0, 0),
+('de16016', 'B', 0, 0),
+('de16017', 'B', 0, 0),
+('de16018', 'B', 0, 0),
+('de16019', 'B', 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `apr2c2`
+--
+
+CREATE TABLE `apr2c2` (
+  `enroll_no` varchar(10) NOT NULL,
+  `section` varchar(1) NOT NULL,
+  `attendance` int(11) NOT NULL,
+  `edit` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `apr2c2`
+--
+
+INSERT INTO `apr2c2` (`enroll_no`, `section`, `attendance`, `edit`) VALUES
+('de16001', 'A', 0, 0),
+('de16002', 'A', 0, 0),
+('de16003', 'A', 0, 0),
+('de16004', 'A', 0, 0),
+('de16005', 'A', 0, 0),
+('de16006', 'A', 0, 0),
+('de16007', 'A', 0, 0),
+('de16008', 'A', 0, 0),
+('de16009', 'A', 0, 0),
+('de16011', 'B', 0, 0),
+('de16012', 'B', 0, 0),
+('de16013', 'B', 0, 0),
+('de16014', 'B', 0, 0),
+('de16015', 'B', 0, 0),
+('de16016', 'B', 0, 0),
+('de16017', 'B', 0, 0),
+('de16018', 'B', 0, 0),
+('de16019', 'B', 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `cer4c1`
+--
+
+CREATE TABLE `cer4c1` (
+  `enroll_no` varchar(10) NOT NULL,
+  `section` varchar(1) NOT NULL,
+  `attendance` int(11) NOT NULL,
+  `edit` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `cer4c1`
+--
+
+INSERT INTO `cer4c1` (`enroll_no`, `section`, `attendance`, `edit`) VALUES
+('de15001', 'A', 0, 0),
+('de15002', 'A', 0, 0),
+('de15003', 'A', 0, 0),
+('de15004', 'A', 0, 0),
+('de15005', 'A', 0, 0),
+('de15006', 'A', 0, 0),
+('de15007', 'A', 0, 0),
+('de15008', 'A', 0, 0),
+('de15009', 'A', 0, 0),
+('de15011', 'B', 0, 0),
+('de15012', 'B', 0, 0),
+('de15013', 'B', 0, 0),
+('de15014', 'B', 0, 0),
+('de15015', 'B', 0, 0),
+('de15016', 'B', 0, 0),
+('de15017', 'B', 0, 0),
+('de15018', 'B', 0, 0),
+('de15019', 'B', 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `cer4c2`
+--
+
+CREATE TABLE `cer4c2` (
+  `enroll_no` varchar(10) NOT NULL,
+  `section` varchar(1) NOT NULL,
+  `attendance` int(11) NOT NULL,
+  `edit` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `cer4c2`
+--
+
+INSERT INTO `cer4c2` (`enroll_no`, `section`, `attendance`, `edit`) VALUES
+('de15001', 'A', 0, 0),
+('de15002', 'A', 0, 0),
+('de15003', 'A', 0, 0),
+('de15004', 'A', 0, 0),
+('de15005', 'A', 0, 0),
+('de15006', 'A', 0, 0),
+('de15007', 'A', 0, 0),
+('de15008', 'A', 0, 0),
+('de15009', 'A', 0, 0),
+('de15011', 'B', 0, 0),
+('de15012', 'B', 0, 0),
+('de15013', 'B', 0, 0),
+('de15014', 'B', 0, 0),
+('de15015', 'B', 0, 0),
+('de15016', 'B', 0, 0),
+('de15017', 'B', 0, 0),
+('de15018', 'B', 0, 0),
+('de15019', 'B', 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `cer4c3`
+--
+
+CREATE TABLE `cer4c3` (
+  `enroll_no` varchar(10) NOT NULL,
+  `section` varchar(1) NOT NULL,
+  `attendance` int(11) NOT NULL,
+  `edit` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `cer4c3`
+--
+
+INSERT INTO `cer4c3` (`enroll_no`, `section`, `attendance`, `edit`) VALUES
+('de15001', 'A', 0, 0),
+('de15002', 'A', 0, 0),
+('de15003', 'A', 0, 0),
+('de15004', 'A', 0, 0),
+('de15005', 'A', 0, 0),
+('de15006', 'A', 0, 0),
+('de15007', 'A', 0, 0),
+('de15008', 'A', 0, 0),
+('de15009', 'A', 0, 0),
+('de15011', 'B', 0, 0),
+('de15012', 'B', 0, 0),
+('de15013', 'B', 0, 0),
+('de15014', 'B', 0, 0),
+('de15015', 'B', 0, 0),
+('de15016', 'B', 0, 0),
+('de15017', 'B', 0, 0),
+('de15018', 'B', 0, 0),
+('de15019', 'B', 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `cer4c4`
+--
+
+CREATE TABLE `cer4c4` (
+  `enroll_no` varchar(10) NOT NULL,
+  `section` varchar(1) NOT NULL,
+  `attendance` int(11) NOT NULL,
+  `edit` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `cer4c4`
+--
+
+INSERT INTO `cer4c4` (`enroll_no`, `section`, `attendance`, `edit`) VALUES
+('de15001', 'A', 0, 0),
+('de15002', 'A', 0, 0),
+('de15003', 'A', 0, 0),
+('de15004', 'A', 0, 0),
+('de15005', 'A', 0, 0),
+('de15006', 'A', 0, 0),
+('de15007', 'A', 0, 0),
+('de15008', 'A', 0, 0),
+('de15009', 'A', 0, 0),
+('de15011', 'B', 0, 0),
+('de15012', 'B', 0, 0),
+('de15013', 'B', 0, 0),
+('de15014', 'B', 0, 0),
+('de15015', 'B', 0, 0),
+('de15016', 'B', 0, 0),
+('de15017', 'B', 0, 0),
+('de15018', 'B', 0, 0),
+('de15019', 'B', 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `cor2c5`
+--
+
+CREATE TABLE `cor2c5` (
+  `enroll_no` varchar(10) NOT NULL,
+  `section` varchar(1) NOT NULL,
+  `attendance` int(11) NOT NULL,
+  `edit` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `cor2c5`
+--
+
+INSERT INTO `cor2c5` (`enroll_no`, `section`, `attendance`, `edit`) VALUES
+('de16001', 'A', 0, 0),
+('de16002', 'A', 0, 0),
+('de16003', 'A', 0, 0),
+('de16004', 'A', 0, 0),
+('de16005', 'A', 0, 0),
+('de16006', 'A', 0, 0),
+('de16007', 'A', 0, 0),
+('de16008', 'A', 0, 0),
+('de16009', 'A', 0, 0),
+('de16011', 'B', 0, 0),
+('de16012', 'B', 0, 0),
+('de16013', 'B', 0, 0),
+('de16014', 'B', 0, 0),
+('de16015', 'B', 0, 0),
+('de16016', 'B', 0, 0),
+('de16017', 'B', 0, 0),
+('de16018', 'B', 0, 0),
+('de16019', 'B', 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `eir2c4`
+--
+
+CREATE TABLE `eir2c4` (
+  `enroll_no` varchar(10) NOT NULL,
+  `section` varchar(1) NOT NULL,
+  `attendance` int(11) NOT NULL,
+  `edit` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `eir2c4`
+--
+
+INSERT INTO `eir2c4` (`enroll_no`, `section`, `attendance`, `edit`) VALUES
+('de16001', 'A', 0, 0),
+('de16002', 'A', 0, 0),
+('de16003', 'A', 0, 0),
+('de16004', 'A', 0, 0),
+('de16005', 'A', 0, 0),
+('de16006', 'A', 0, 0),
+('de16007', 'A', 0, 0),
+('de16008', 'A', 0, 0),
+('de16009', 'A', 0, 0),
+('de16011', 'B', 0, 0),
+('de16012', 'B', 0, 0),
+('de16013', 'B', 0, 0),
+('de16014', 'B', 0, 0),
+('de16015', 'B', 0, 0),
+('de16016', 'B', 0, 0),
+('de16017', 'B', 0, 0),
+('de16018', 'B', 0, 0),
+('de16019', 'B', 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `facultiesattendance`
+--
+
+CREATE TABLE `facultiesattendance` (
+  `enroll_no` varchar(10) NOT NULL,
+  `attendance` int(11) NOT NULL DEFAULT '0',
+  `date` date NOT NULL DEFAULT '0000-00-00'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `facultiesattendance`
+--
+
+INSERT INTO `facultiesattendance` (`enroll_no`, `attendance`, `date`) VALUES
+('aa', 0, '0000-00-00'),
+('ac', 0, '0000-00-00'),
+('adm', 0, '0000-00-00'),
+('aj', 0, '0000-00-00'),
+('al', 0, '0000-00-00'),
+('am', 0, '0000-00-00'),
+('ap', 0, '0000-00-00'),
+('asr', 0, '0000-00-00'),
+('cc', 0, '0000-00-00'),
+('dn', 0, '0000-00-00'),
+('flt1', 10, '2017-03-16'),
+('flt2', 6, '2017-03-12'),
+('flt3', 4, '2017-03-12'),
+('flt4', 1, '2017-01-04'),
+('flt5', 0, '0000-00-00'),
+('flt6', 1, '2017-02-14'),
+('flt7', 0, '0000-00-00'),
+('flt8', 0, '0000-00-00'),
+('flt9', 0, '0000-00-00'),
+('glp', 0, '0000-00-00'),
+('hs', 0, '0000-00-00'),
+('jr', 0, '0000-00-00'),
+('js', 0, '0000-00-00'),
+('lg', 0, '0000-00-00');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `facultynotification`
+--
+
+CREATE TABLE `facultynotification` (
+  `send_from` varchar(30) NOT NULL,
+  `send_to` varchar(30) NOT NULL,
+  `notification` text NOT NULL,
+  `seen` tinyint(1) NOT NULL,
+  `date` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `facultynotification`
+--
+
+INSERT INTO `facultynotification` (`send_from`, `send_to`, `notification`, `seen`, `date`) VALUES
+('admin', 'flt4', 'something for fac 4', 1, '2017-01-04'),
+('admin', 'flt4', 'something for fac 4', 1, '2017-01-04'),
+('admin', 'flt4', 'something for fac 4', 1, '2017-01-04'),
+('admin', 'flt4', 'something for fac 4', 1, '2017-01-04'),
+('admin', 'flt4', 'wwsomething for fac 4', 1, '2017-01-04'),
+('admin', 'flt4', 'dgsggs', 1, '2017-01-04'),
+('admin', 'flt1', 'noti_1 from admin to flt1', 1, '2017-01-04'),
+('admin', 'flt1', 'noti_2 from admin to flt1', 1, '2017-01-04'),
+('admin', 'flt2', 'write to flt2 by admin.', 1, '2017-01-05'),
+('admin', 'flt2', 'rewrite to flt2 by admin.', 1, '2017-01-05'),
+('admin', 'flt2', '3rewrite to flt2 by admin.', 1, '2017-01-05'),
+('admin', 'flt3', '43rewrite to flt2 by admin.', 0, '2017-01-05'),
+('admin', 'flt2', '43rewrite to flt2 by admin.', 1, '2017-01-05');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `mer2c3`
+--
+
+CREATE TABLE `mer2c3` (
+  `enroll_no` varchar(10) NOT NULL,
+  `section` varchar(1) NOT NULL,
+  `attendance` int(11) NOT NULL,
+  `edit` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `mer2c3`
+--
+
+INSERT INTO `mer2c3` (`enroll_no`, `section`, `attendance`, `edit`) VALUES
+('de16001', 'A', 0, 0),
+('de16002', 'A', 0, 0),
+('de16003', 'A', 0, 0),
+('de16004', 'A', 0, 0),
+('de16005', 'A', 0, 0),
+('de16006', 'A', 0, 0),
+('de16007', 'A', 0, 0),
+('de16008', 'A', 0, 0),
+('de16009', 'A', 0, 0),
+('de16011', 'B', 0, 0),
+('de16012', 'B', 0, 0),
+('de16013', 'B', 0, 0),
+('de16014', 'B', 0, 0),
+('de16015', 'B', 0, 0),
+('de16016', 'B', 0, 0),
+('de16017', 'B', 0, 0),
+('de16018', 'B', 0, 0),
+('de16019', 'B', 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sub1`
+--
+
+CREATE TABLE `sub1` (
+  `enroll_no` varchar(10) NOT NULL,
+  `section` varchar(1) NOT NULL,
+  `attendance` int(11) NOT NULL,
+  `edit` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `sub1`
+--
+
+INSERT INTO `sub1` (`enroll_no`, `section`, `attendance`, `edit`) VALUES
+('std1', 'A', 5, 0),
+('std10', 'B', 0, 1),
+('std2', 'A', 5, 0),
+('std3', 'A', 5, 0),
+('std4', 'A', 5, 0),
+('std5', 'A', 4, 1),
+('std6', 'B', 0, 1),
+('std7', 'B', 0, 0),
+('std8', 'B', 0, 0),
+('std9', 'B', 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sub2`
+--
+
+CREATE TABLE `sub2` (
+  `enroll_no` varchar(10) NOT NULL,
+  `section` varchar(1) NOT NULL,
+  `attendance` int(11) NOT NULL,
+  `edit` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `sub2`
+--
+
+INSERT INTO `sub2` (`enroll_no`, `section`, `attendance`, `edit`) VALUES
+('std1', '0', 0, 0),
+('std10', '0', 0, 0),
+('std2', '0', 0, 0),
+('std3', '0', 0, 0),
+('std4', '0', 0, 0),
+('std5', '0', 0, 0),
+('std6', '0', 0, 0),
+('std7', '0', 0, 0),
+('std8', '0', 0, 0),
+('std9', '0', 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sub3`
+--
+
+CREATE TABLE `sub3` (
+  `enroll_no` varchar(10) NOT NULL,
+  `section` varchar(1) NOT NULL,
+  `attendance` int(11) NOT NULL,
+  `edit` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `sub3`
+--
+
+INSERT INTO `sub3` (`enroll_no`, `section`, `attendance`, `edit`) VALUES
+('std1', '0', 0, 0),
+('std10', '0', 0, 0),
+('std2', '0', 0, 0),
+('std3', '0', 0, 0),
+('std4', '0', 0, 1),
+('std5', '0', 0, 0),
+('std6', '0', 0, 1),
+('std7', '0', 0, 1),
+('std8', '0', 0, 1),
+('std9', '0', 0, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sub4`
+--
+
+CREATE TABLE `sub4` (
+  `enroll_no` varchar(10) NOT NULL,
+  `attendance` int(11) NOT NULL,
+  `section` varchar(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sub6`
+--
+
+CREATE TABLE `sub6` (
+  `enroll_no` varchar(10) NOT NULL,
+  `section` varchar(1) NOT NULL,
+  `attendance` int(11) NOT NULL,
+  `edit` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `sub6`
+--
+
+INSERT INTO `sub6` (`enroll_no`, `section`, `attendance`, `edit`) VALUES
+('std11', '0', 0, 1),
+('std12', '0', 0, 1),
+('std13', '0', 0, 1),
+('std14', '0', 0, 1),
+('std15', '0', 0, 1),
+('std16', '0', 0, 0),
+('std17', '0', 0, 0),
+('std18', '0', 0, 0),
+('std19', '0', 0, 0),
+('std20', '0', 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `subject_table`
+--
+
+CREATE TABLE `subject_table` (
+  `subject_code` varchar(10) NOT NULL,
+  `subject_name` varchar(50) NOT NULL,
+  `tought_by` varchar(10) NOT NULL,
+  `for_department` varchar(50) NOT NULL,
+  `for_year` varchar(11) NOT NULL,
+  `class_happens_in_a` int(11) NOT NULL,
+  `class_happens_in_b` int(11) NOT NULL,
+  `a_date` date NOT NULL,
+  `b_date` date NOT NULL,
+  `edit_flag_for_A` tinyint(4) NOT NULL DEFAULT '0',
+  `edit_flag_for_B` tinyint(1) NOT NULL DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `subject_table`
+--
+
+INSERT INTO `subject_table` (`subject_code`, `subject_name`, `tought_by`, `for_department`, `for_year`, `class_happens_in_a`, `class_happens_in_b`, `a_date`, `b_date`, `edit_flag_for_A`, `edit_flag_for_B`) VALUES
+('3co252', 'analysis_of_algorithm', 'glp', 'CS', 'III', 0, 0, '0000-00-00', '0000-00-00', 0, 0),
+('3co253', 'server_side_programming', 'lg', 'CS', 'III', 0, 0, '0000-00-00', '0000-00-00', 0, 0),
+('3co254', 'software_engineering', 'ac', 'CS', 'III', 0, 0, '0000-00-00', '0000-00-00', 0, 0),
+('3co255', 'db_management_system', 'jr', 'CS', 'III', 0, 0, '0000-00-00', '0000-00-00', 0, 0),
+('4co252', 'enterprise_resource_planning', 'vd', 'CS', 'IV', 0, 0, '0000-00-00', '0000-00-00', 0, 0),
+('4co253', 'network_security', 'aj', 'CS', 'IV', 0, 0, '0000-00-00', '0000-00-00', 0, 0),
+('4co254', 'internet_computing', 'am', 'CS', 'IV', 0, 0, '0000-00-00', '0000-00-00', 0, 0),
+('4co255', 'information_retrieval', 'hs', 'CS', 'IV', 0, 0, '0000-00-00', '0000-00-00', 0, 0),
+('amr2c1', 'applied_mathematics', 'cc', 'CS', 'I', 0, 0, '0000-00-00', '0000-00-00', 0, 0),
+('apr2c2', 'applied_physics', 'rg', 'CS', 'I', 0, 0, '0000-00-00', '0000-00-00', 0, 0),
+('cer4c1', 'discrete_structures', 'rp', 'CS', 'II', 0, 0, '0000-00-00', '0000-00-00', 0, 0),
+('cer4c2', 'operating_system', 'pk', 'CS', 'II', 0, 0, '0000-00-00', '0000-00-00', 0, 0),
+('cer4c3', 'abstraction_and_paradigms_for_programming', 'aa', 'CS', 'II', 0, 0, '0000-00-00', '0000-00-00', 0, 0),
+('cer4c4', 'database_management_system', 'vj', 'CS', 'II', 0, 0, '0000-00-00', '0000-00-00', 0, 0),
+('cor2c5', 'computer_programming', 'md', 'CS', 'I', 0, 0, '0000-00-00', '0000-00-00', 0, 0),
+('eir2c4', 'electrical_engineering', 'ts', 'CS', 'I', 0, 0, '0000-00-00', '0000-00-00', 0, 0),
+('mer2c3', 'engineering_drawing', 'al', 'CS', 'I', 0, 0, '0000-00-00', '0000-00-00', 0, 0),
+('sub1', 'subject1', 'flt1', 'CS', 'IV', 2, 1, '2017-02-19', '2017-02-19', 0, 0),
+('sub10', 'subject10', 'flt10', 'E_TC', 'IV', 0, 0, '0000-00-00', '0000-00-00', 0, 0),
+('sub2', 'subject2', 'flt2', 'CS', 'IV', 3, 1, '2017-02-13', '2017-02-13', 0, 0),
+('sub3', 'subject3', 'flt3', 'CS', 'IV', 9, 1, '2017-02-13', '2017-02-13', 0, 0),
+('sub4', 'subject4', 'flt4', 'CS', 'IV', 0, 0, '0000-00-00', '0000-00-00', 0, 0),
+('sub5', 'subject5', 'flt5', 'IT', 'II', 0, 0, '0000-00-00', '0000-00-00', 0, 0),
+('sub6', 'subject6', 'flt6', 'IT', 'IV', 4, 0, '2017-02-13', '0000-00-00', 0, 0),
+('sub7', 'subject7', 'flt7', 'IT', 'IV', 0, 0, '0000-00-00', '0000-00-00', 0, 0),
+('sub8', 'subject8', 'flt8', 'IT', 'IV', 0, 0, '0000-00-00', '0000-00-00', 0, 0),
+('sub9', 'subject9', 'flt9', 'E_I', 'IV', 0, 0, '0000-00-00', '0000-00-00', 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `valid_users_list`
+--
+
+CREATE TABLE `valid_users_list` (
+  `enroll_no` varchar(10) NOT NULL,
+  `username` varchar(30) NOT NULL,
+  `password` varchar(30) NOT NULL,
+  `enroll_year` int(11) NOT NULL,
+  `studing_year` varchar(5) NOT NULL,
+  `department` varchar(40) NOT NULL,
+  `semester` varchar(10) NOT NULL,
+  `section` varchar(1) NOT NULL,
+  `role` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `valid_users_list`
+--
+
+INSERT INTO `valid_users_list` (`enroll_no`, `username`, `password`, `enroll_year`, `studing_year`, `department`, `semester`, `section`, `role`) VALUES
+('aa', 'arpit_agrawal', 'aa', 2000, 'NA', 'CS', 'NA', 'N', 'teacher'),
+('ac', 'ankita_chourasia', 'ac', 2000, 'NA', 'CS', 'NA', 'N', 'teacher'),
+('adm', 'aditya_makwe', 'adm', 2000, 'NA', 'CS', 'NA', 'N', 'teacher'),
+('admin', 'admin', 'admin', 2000, 'NA', 'NA', 'NA', '-', 'admin'),
+('aj', 'ashish_jain', 'aj', 2000, 'NA', 'CS', 'NA', 'N', 'teacher'),
+('al', 'akhilesh_lodwal', 'al', 2000, 'NA', 'CS', 'NA', 'N', 'teacher'),
+('am', 'amit_mittal', 'am', 2000, 'NA', 'CS', 'NA', 'N', 'teacher'),
+('ap', 'ashish_panchal', 'ap', 2000, 'NA', 'CS', 'NA', 'N', 'teacher'),
+('asr', 'arti_sharan', 'asr', 2000, 'NA', 'CS', 'NA', 'N', 'teacher'),
+('cc', 'chandrashekhar_chouhan', 'cc', 2000, 'NA', 'CS', 'NA', 'N', 'teacher'),
+('de13001', 'aman_jain', 'de13001', 2013, 'IV', 'CS', '8th', 'A', 'student'),
+('de13002', 'ashish_jain', 'de13002', 2013, 'IV', 'CS', '8th', 'A', 'student'),
+('de13003', 'alay_bohra', 'de13003', 2013, 'IV', 'CS', '8th', 'A', 'student'),
+('de13004', 'dheeraj_sharma', 'de13004', 2013, 'IV', 'CS', '8th', 'A', 'student'),
+('de13005', 'harsh_goyal', 'de13005', 2013, 'IV', 'CS', '8th', 'A', 'student'),
+('de13006', 'lucky_barkane', 'de13006', 2013, 'IV', 'CS', '8th', 'A', 'student'),
+('de13007', 'manish_pandey', 'de13007', 2013, 'IV', 'CS', '8th', 'A', 'student'),
+('de13008', 'nikhil_dubey', 'de13008', 2013, 'IV', 'CS', '8th', 'A', 'student'),
+('de13009', 'rohit_verma', 'de13009', 2013, 'IV', 'CS', '8th', 'A', 'student'),
+('de13011', 'aman_jain', 'de13011', 2013, 'IV', 'CS', '8th', 'B', 'student'),
+('de13012', 'ashish_jain', 'de13012', 2013, 'IV', 'CS', '8th', 'B', 'student'),
+('de13013', 'alay_bohra', 'de13013', 2013, 'IV', 'CS', '8th', 'B', 'student'),
+('de13014', 'dheeraj_sharma', 'de13014', 2013, 'IV', 'CS', '8th', 'B', 'student'),
+('de13015', 'harsh_goyal', 'de13013', 2013, 'IV', 'CS', '8th', 'B', 'student'),
+('de13016', 'lucky_barkane', 'de13016', 2013, 'IV', 'CS', '8th', 'B', 'student'),
+('de13017', 'manish_pandey', 'de13017', 2013, 'IV', 'CS', '8th', 'B', 'student'),
+('de13018', 'nikhil_dubey', 'de13018', 2013, 'IV', 'CS', '8th', 'B', 'student'),
+('de13019', 'rohit_verma', 'de13019', 2013, 'IV', 'CS', '8th', 'B', 'student'),
+('de14001', 'aman_jain', 'de14001', 2014, 'III', 'CS', '6th', 'A', 'student'),
+('de14002', 'ashish_jain', 'de14002', 2014, 'III', 'CS', '6th', 'A', 'student'),
+('de14003', 'alay_bohra', 'de14003', 2014, 'III', 'CS', '6th', 'A', 'student'),
+('de14004', 'dheeraj_sharma', 'de14004', 2014, 'III', 'CS', '6th', 'A', 'student'),
+('de14005', 'harsh_goyal', 'de14005', 2014, 'III', 'CS', '6th', 'A', 'student'),
+('de14006', 'lucky_barkane', 'de14006', 2014, 'III', 'CS', '6th', 'A', 'student'),
+('de14007', 'manish_pandey', 'de14007', 2014, 'III', 'CS', '6th', 'A', 'student'),
+('de14008', 'nikhil_dubey', 'de14008', 2014, 'III', 'CS', '6th', 'A', 'student'),
+('de14009', 'rohit_verma', 'de14009', 2014, 'III', 'CS', '6th', 'A', 'student'),
+('de14011', 'aman_jain', 'de14011', 2014, 'III', 'CS', '6th', 'B', 'student'),
+('de14012', 'ashish_jain', 'de14012', 2014, 'III', 'CS', '6th', 'B', 'student'),
+('de14013', 'alay_bohra', 'de14013', 2014, 'III', 'CS', '6th', 'B', 'student'),
+('de14014', 'dheeraj_sharma', 'de14014', 2014, 'III', 'CS', '6th', 'B', 'student'),
+('de14015', 'harsh_goyal', 'de14014', 2014, 'III', 'CS', '6th', 'B', 'student'),
+('de14016', 'lucky_barkane', 'de14016', 2014, 'III', 'CS', '6th', 'B', 'student'),
+('de14017', 'manish_pandey', 'de14017', 2014, 'III', 'CS', '6th', 'B', 'student'),
+('de14018', 'nikhil_dubey', 'de14018', 2014, 'III', 'CS', '6th', 'B', 'student'),
+('de14019', 'rohit_verma', 'de14019', 2014, 'III', 'CS', '6th', 'B', 'student'),
+('de15001', 'aman_jain', 'de15001', 2015, 'II', 'CS', '4th', 'A', 'student'),
+('de15002', 'ashish_jain', 'de15002', 2015, 'II', 'CS', '4th', 'A', 'student'),
+('de15003', 'alay_bohra', 'de15003', 2015, 'II', 'CS', '4th', 'A', 'student'),
+('de15004', 'dheeraj_sharma', 'de15004', 2015, 'II', 'CS', '4th', 'A', 'student'),
+('de15005', 'harsh_goyal', 'de15005', 2015, 'II', 'CS', '4th', 'A', 'student'),
+('de15006', 'lucky_barkane', 'de15006', 2015, 'II', 'CS', '4th', 'A', 'student'),
+('de15007', 'manish_pandey', 'de15007', 2015, 'II', 'CS', '4th', 'A', 'student'),
+('de15008', 'nikhil_dubey', 'de15008', 2015, 'II', 'CS', '4th', 'A', 'student'),
+('de15009', 'rohit_verma', 'de15009', 2015, 'II', 'CS', '4th', 'A', 'student'),
+('de15011', 'aman_jain', 'de15011', 2015, 'II', 'CS', '4th', 'B', 'student'),
+('de15012', 'ashish_jain', 'de15012', 2015, 'II', 'CS', '4th', 'B', 'student'),
+('de15013', 'alay_bohra', 'de15013', 2015, 'II', 'CS', '4th', 'B', 'student'),
+('de15014', 'dheeraj_sharma', 'de15014', 2015, 'II', 'CS', '4th', 'B', 'student'),
+('de15015', 'harsh_goyal', 'de15015', 2015, 'II', 'CS', '4th', 'B', 'student'),
+('de15016', 'lucky_barkane', 'de15016', 2015, 'II', 'CS', '4th', 'B', 'student'),
+('de15017', 'manish_pandey', 'de15017', 2015, 'II', 'CS', '4th', 'B', 'student'),
+('de15018', 'nikhil_dubey', 'de15018', 2015, 'II', 'CS', '4th', 'B', 'student'),
+('de15019', 'rohit_verma', 'de15019', 2015, 'II', 'CS', '4th', 'B', 'student'),
+('de16001', 'aman_jain', 'de16001', 2016, 'I', 'CS', '2nd', 'A', 'student'),
+('de16002', 'ashish_jain', 'de16002', 2016, 'I', 'CS', '2nd', 'A', 'student'),
+('de16003', 'alay_bohra', 'de16003', 2016, 'I', 'CS', '2nd', 'A', 'student'),
+('de16004', 'dheeraj_sharma', 'de16004', 2016, 'I', 'CS', '2nd', 'A', 'student'),
+('de16005', 'harsh_goyal', 'de16005', 2016, 'I', 'CS', '2nd', 'A', 'student'),
+('de16006', 'lucky_barkane', 'de16006', 2016, 'I', 'CS', '2nd', 'A', 'student'),
+('de16007', 'manish_pandey', 'de16007', 2016, 'I', 'CS', '2nd', 'A', 'student'),
+('de16008', 'nikhil_dubey', 'de16008', 2016, 'I', 'CS', '2nd', 'A', 'student'),
+('de16009', 'rohit_verma', 'de16009', 2016, 'I', 'CS', '2nd', 'A', 'student'),
+('de16011', 'aman_jain', 'de16011', 2016, 'I', 'CS', '2nd', 'B', 'student'),
+('de16012', 'ashish_jain', 'de16012', 2016, 'I', 'CS', '2nd', 'B', 'student'),
+('de16013', 'alay_bohra', 'de16013', 2016, 'I', 'CS', '2nd', 'B', 'student'),
+('de16014', 'dheeraj_sharma', 'de16014', 2016, 'I', 'CS', '2nd', 'B', 'student'),
+('de16015', 'harsh_goyal', 'de16015', 2016, 'I', 'CS', '2nd', 'B', 'student'),
+('de16016', 'lucky_barkane', 'de16016', 2016, 'I', 'CS', '2nd', 'B', 'student'),
+('de16017', 'manish_pandey', 'de16017', 2016, 'I', 'CS', '2nd', 'B', 'student'),
+('de16018', 'nikhil_dubey', 'de16018', 2016, 'I', 'CS', '2nd', 'B', 'student'),
+('de16019', 'rohit_verma', 'de16019', 2016, 'I', 'CS', '2nd', 'B', 'student'),
+('dn', 'dheeraj_nitnavare', 'dn', 2000, 'NA', 'CS', 'NA', 'N', 'teacher'),
+('flt1', 'faculty1', 'faculty1', 2000, 'IV', 'CS', '6th', 'A', 'teacher'),
+('flt10', 'faculty10', 'faculty10', 2016, 'NA', 'E_TC', 'NA', 'N', 'teacher'),
+('flt2', 'faculty2', 'faculty2', 2001, 'IV', 'CS', '6th', 'A', 'teacher'),
+('flt3', 'faculty3', 'faculty3', 2010, 'IV', 'CS', '6th', 'A', 'teacher'),
+('flt4', 'faculty4', 'faculty4', 2008, 'IV', 'CS', '6th', 'A', 'teacher'),
+('flt5', 'faculty5', 'faculty5', 2001, 'III', 'IT', '6th', 'A', 'teacher'),
+('flt6', 'faculty6', 'faculty6', 2016, 'NA', 'IT', 'NA', 'N', 'teacher'),
+('flt7', 'faculty7', 'faculty7', 2016, 'NA', 'IT', 'NA', 'N', 'teacher'),
+('flt8', 'faculty8', 'faculty8', 2016, 'NA', 'IT', 'NA', 'N', 'teacher'),
+('flt9', 'faculty9', 'faculty9', 2016, 'NA', 'E_I', 'NA', 'N', 'teacher'),
+('glp', 'g_l_prajapati', 'glp', 2000, 'NA', 'CS', 'NA', 'N', 'teacher'),
+('hs', 'harshita_sharma', 'hs', 2000, 'NA', 'CS', 'NA', 'N', 'teacher'),
+('jr', 'jagdish_raikwar', 'jr', 2000, 'NA', 'CS', 'NA', 'N', 'teacher'),
+('js', 'jai_singh', 'js', 2000, 'NA', 'CS', 'NA', 'N', 'teacher'),
+('lg', 'lalit_gehlod', 'lg', 2000, 'NA', 'CS', 'NA', 'N', 'teacher'),
+('md', 'mala_dutta', 'md', 2000, 'NA', 'CS', 'NA', 'N', 'teacher'),
+('pb', 'pratosh_bansal', 'pb', 2000, 'NA', 'CS', 'NA', 'N', 'teacher'),
+('pk', 'pravin_karma', 'pk', 2000, 'NA', 'CS', 'NA', 'N', 'teacher'),
+('rg', 'rachna_gupta', 'rg', 2000, 'NA', 'CS', 'NA', 'N', 'teacher'),
+('rp', 'rohit_pathak', 'rp', 2000, 'NA', 'CS', 'NA', 'N', 'teacher'),
+('rv', 'ravindra_verma', 'rv', 2000, 'NA', 'CS', 'NA', 'N', 'teacher'),
+('sa', 'sufia_aziz', 'sa', 2000, 'NA', 'CS', 'NA', 'N', 'teacher'),
+('std1', 'student1', 'student1', 2013, 'IV', 'CS', '8th', 'A', 'student'),
+('std10', 'student10', 'student10', 2013, 'IV', 'CS', '8th', 'B', 'student'),
+('std11', 'student11', 'student11', 2013, 'IV', 'IT', '8th', 'B', 'student'),
+('std12', 'student12', 'student12', 2013, 'IV', 'IT', '8th', 'A', 'student'),
+('std13', 'student13', 'student13', 2013, 'IV', 'IT', '8th', 'A', 'student'),
+('std14', 'student14', 'student14', 2013, 'IV', 'IT', '8th', 'A', 'student'),
+('std15', 'student15', 'student15', 2013, 'IV', 'IT', '8th', 'A', 'student'),
+('std16', 'student16', 'student16', 2013, 'IV', 'IT', '8th', 'B', 'student'),
+('std17', 'student17', 'student17', 2013, 'IV', 'IT', '8th', 'B', 'student'),
+('std18', 'student18', 'student18', 2013, 'IV', 'IT', '8th', 'B', 'student'),
+('std19', 'student19', 'student19', 2013, 'IV', 'IT', '8th', 'B', 'student'),
+('std2', 'student2', 'student2', 2013, 'IV', 'CS', '8th', 'A', 'student'),
+('std20', 'student20', 'student20', 2013, 'IV', 'CS', '8th', 'B', 'student'),
+('std3', 'student3', 'student3', 2013, 'IV', 'CS', '8th', 'A', 'student'),
+('std4', 'student4', 'student4', 2013, 'IV', 'CS', '8th', 'A', 'student'),
+('std5', 'student5', 'student5', 2013, 'IV', 'CS', '8th', 'A', 'student'),
+('std6', 'student6', 'student6', 2013, 'IV', 'CS', '8th', 'B', 'student'),
+('std7', 'student7', 'student7', 2013, 'IV', 'CS', '8th', 'B', 'student'),
+('std8', 'student8', 'student8', 2013, 'IV', 'CS', '8th', 'B', 'student'),
+('std9', 'student9', 'student9', 2013, 'IV', 'CS', '8th', 'B', 'student'),
+('tlm', 'lokesh_mandloi', 'tlm', 2000, 'NA', 'CS', 'NA', 'N', 'teacher'),
+('ts', 'tapesh_sarsodiya', 'ts', 2000, 'NA', 'CS', 'NA', 'N', 'teacher'),
+('van', 'ankita_neema', 'van', 2000, 'NA', 'CS', 'NA', 'N', 'teacher'),
+('vd', 'vedpriya_dongre', 'vd', 2000, 'NA', 'CS', 'NA', 'N', 'teacher'),
+('vj', 'vaibhav_jain', 'vj', 2000, 'NA', 'CS', 'NA', 'N', 'teacher'),
+('vnb', 'nachiket_bhate', 'vnb', 2000, 'NA', 'CS', 'NA', 'N', 'teacher'),
+('vv', 'vikas_vankhede', 'vv', 2000, 'NA', 'CS', 'NA', 'N', 'teacher');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `3co252`
+--
+ALTER TABLE `3co252`
+  ADD PRIMARY KEY (`enroll_no`);
+
+--
+-- Indexes for table `3co253`
+--
+ALTER TABLE `3co253`
+  ADD PRIMARY KEY (`enroll_no`);
+
+--
+-- Indexes for table `3co254`
+--
+ALTER TABLE `3co254`
+  ADD PRIMARY KEY (`enroll_no`);
+
+--
+-- Indexes for table `3co255`
+--
+ALTER TABLE `3co255`
+  ADD PRIMARY KEY (`enroll_no`);
+
+--
+-- Indexes for table `4co252`
+--
+ALTER TABLE `4co252`
+  ADD PRIMARY KEY (`enroll_no`);
+
+--
+-- Indexes for table `4co253`
+--
+ALTER TABLE `4co253`
+  ADD PRIMARY KEY (`enroll_no`);
+
+--
+-- Indexes for table `4co254`
+--
+ALTER TABLE `4co254`
+  ADD PRIMARY KEY (`enroll_no`);
+
+--
+-- Indexes for table `4co255`
+--
+ALTER TABLE `4co255`
+  ADD PRIMARY KEY (`enroll_no`);
+
+--
+-- Indexes for table `amr2c1`
+--
+ALTER TABLE `amr2c1`
+  ADD PRIMARY KEY (`enroll_no`);
+
+--
+-- Indexes for table `apr2c2`
+--
+ALTER TABLE `apr2c2`
+  ADD PRIMARY KEY (`enroll_no`);
+
+--
+-- Indexes for table `cer4c1`
+--
+ALTER TABLE `cer4c1`
+  ADD PRIMARY KEY (`enroll_no`);
+
+--
+-- Indexes for table `cer4c2`
+--
+ALTER TABLE `cer4c2`
+  ADD PRIMARY KEY (`enroll_no`);
+
+--
+-- Indexes for table `cer4c3`
+--
+ALTER TABLE `cer4c3`
+  ADD PRIMARY KEY (`enroll_no`);
+
+--
+-- Indexes for table `cer4c4`
+--
+ALTER TABLE `cer4c4`
+  ADD PRIMARY KEY (`enroll_no`);
+
+--
+-- Indexes for table `cor2c5`
+--
+ALTER TABLE `cor2c5`
+  ADD PRIMARY KEY (`enroll_no`);
+
+--
+-- Indexes for table `eir2c4`
+--
+ALTER TABLE `eir2c4`
+  ADD PRIMARY KEY (`enroll_no`);
+
+--
+-- Indexes for table `facultiesattendance`
+--
+ALTER TABLE `facultiesattendance`
+  ADD PRIMARY KEY (`enroll_no`);
+
+--
+-- Indexes for table `mer2c3`
+--
+ALTER TABLE `mer2c3`
+  ADD PRIMARY KEY (`enroll_no`);
+
+--
+-- Indexes for table `sub1`
+--
+ALTER TABLE `sub1`
+  ADD PRIMARY KEY (`enroll_no`);
+
+--
+-- Indexes for table `sub2`
+--
+ALTER TABLE `sub2`
+  ADD PRIMARY KEY (`enroll_no`);
+
+--
+-- Indexes for table `sub3`
+--
+ALTER TABLE `sub3`
+  ADD PRIMARY KEY (`enroll_no`);
+
+--
+-- Indexes for table `sub4`
+--
+ALTER TABLE `sub4`
+  ADD PRIMARY KEY (`enroll_no`);
+
+--
+-- Indexes for table `sub6`
+--
+ALTER TABLE `sub6`
+  ADD PRIMARY KEY (`enroll_no`);
+
+--
+-- Indexes for table `subject_table`
+--
+ALTER TABLE `subject_table`
+  ADD PRIMARY KEY (`subject_code`);
+
+--
+-- Indexes for table `valid_users_list`
+--
+ALTER TABLE `valid_users_list`
+  ADD PRIMARY KEY (`enroll_no`);
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

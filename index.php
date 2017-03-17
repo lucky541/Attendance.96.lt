@@ -396,23 +396,26 @@ onload="myFunction()"
 
    <div class="col-sm-6 purple z-depth-2 animated best-feature" >
      <br />
-       <h3 class="h3-responsive white-text col-sm-2"><img src="img/icons/smartphone.png"></h3>
-       <p class="white-text col-sm-10">some text will come up here to make this more cool then the previous version in which
+       <h3 class="h3-responsive white-text col-sm-2"><img src="img/icons/smartphone.png"></h4>
+       <p class="white-text col-sm-10">
+         <strong class="mark blue-text">Resposive</strong> come up here to make this more cool then the previous version in which
        I used the slider to show the usp's of the app.</p>
    </div>
 
    <div class="col-sm-6 "><br /></div>
   <div class="col-sm-6 pink  z-depth-2 animated  best-feature" >  <br />
        <h3 class="h3-responsive white-text col-sm-2"><img src="img/icons/realtime.png"></h3>
-       <p class="white-text col-sm-10">some text will come up here to make this more cool then the previous version in which
+       <p class="white-text col-sm-10">
+         <strong class="mark blue-text">Real Time System</strong>some text will come up here to make this more cool then the previous version in which
        I used the slider to show the usp's of the app.</p>
    </div>
 
 
    <div class="col-sm-6"><br /></div>
    <div class="col-sm-6 blue z-depth-2 animated best-feature" >  <br />
-        <h3 class="h3-responsive white-text col-sm-2"><img src="img/icons/quick.png"></h3>
-       <p class="white-text col-sm-10">some text will come up here to make this more cool then the previous version in which
+        <h3 class="h3-responsive white-text col-sm-2 "><img class="z-depth-1" src="img/icons/quick.png"></h3>
+       <p class="white-text col-sm-10">
+         <strong class="mark blue-text">Quick</strong>some text will come up here to make this more cool then the previous version in which
        I used the slider to show the usp's of the app.</p>
    </div>
 
@@ -420,7 +423,8 @@ onload="myFunction()"
    <div class="col-sm-6"><br /></div>
    <div class="col-sm-6 red  z-depth-2 animated best-feature " >  <br />
         <h3 class="h3-responsive white-text col-sm-2"><img src="img/icons/paper.png"></h3>
-       <p class="white-text col-sm-10">some text will come up here to make this more cool then the previous version in which
+       <p class="white-text col-sm-10">
+         <strong class="mark blue-text">Paperless</strong>some text will come up here to make this more cool then the previous version in which
        I used the slider to show the usp's of the app.</p>
    </div>
 

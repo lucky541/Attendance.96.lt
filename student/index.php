@@ -89,7 +89,7 @@ $enroll_no=$_SESSION['enroll_no'];
                     <div class="jumbotron row" id="note">
 
                    <div id="myDIV" class="header col-sm-6" >
-                    <h1 class="h1-responsive">Welcome <?php echo  $_SESSION['username'];?>
+                    <h3 class="h3-responsive blue-text">Welcome <?php echo  $_SESSION['username'];?>
 
                     <small>
                      <a id="bell" onclick="showNotification()" data-toggle="" title="" data-placement="" >
@@ -97,7 +97,7 @@ $enroll_no=$_SESSION['enroll_no'];
                        <?php echo $no;?>
                       </span></a>
                      </small>
-                    </h1>
+                   </h3>
                      <div id="noti" style="display:none;"><?php echo  $_SESSION['enroll_no'];?></div>
                       <!--notification will be load by ajax-->
                       <div id="showNoti" class="showME"></div>
@@ -122,7 +122,7 @@ $enroll_no=$_SESSION['enroll_no'];
  <br/>
                     <!-- Schedule container -->
                     <div class="jumbotron row" id="schedule">
-                    <h2 class="h2-responsive">#Your Schedule</h2>  <hr />
+                    <h3 class="h3-responsive">#Your Schedule</h3>  <hr />
                     <center><img src="../img/schedule.jpg"  class="img-responsive"> </center>
                     </div>
 
@@ -132,7 +132,7 @@ $enroll_no=$_SESSION['enroll_no'];
  <br/>
                     <!--Faculty Jumbotron-->
                     <div class="jumbotron row" id="attendance">
-                    <h2 class="h2-responsive">#Attendance</h2> <hr />
+                    <h3 class="h3-responsive">#Attendance</h3> <hr />
                     <?php
 
 
@@ -146,12 +146,12 @@ $enroll_no=$_SESSION['enroll_no'];
                             {
                               ?>
                             <!--Panel1-->
-                            <div class="card col-sm-3 hoverable">
-                            <h3 class="card-header primary-color white-text">
+                            <div class="card col-sm-5 hoverable">
+                            <h5 class=" h5-responsive card-header primary-color white-text">
                             <?php     echo $row->subject_name; ?>
-                            </h3>
+                          </h5>
                             <div class="card-block">
-                            <h4 class="card-title"> <?php   echo "Subject Code :".$row->subject_code; ?></h4>
+                            <h6 class=" h6-responsive card-title blue-text"> <?php   echo "Subject Code : ".$row->subject_code; ?></h6>
 
                              <?php
 
@@ -166,8 +166,12 @@ $enroll_no=$_SESSION['enroll_no'];
                                  echo "Attendance : <b>".$attendanceRow->attendance."</b><br />";
                                  }
                                 }
-                              echo 'Tought By : '.$row->tought_by."<br/><br/>";
+                                if($result = $dbConnection->query("SELECT username from valid_users_list WHERE enroll_no='{$row->tought_by}'")){
+                                        $fltname= $result->fetch_object();
+                                  echo '<hr/>Tought By : '.$fltname->username.' ('.$row->tought_by.")";
 
+
+                                }
                              ?>
                             </p>
                             </div>

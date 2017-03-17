@@ -1,8 +1,8 @@
-<?php 
+<?php
    error_reporting(0);
   require '../db/connection.php';
   session_start();
- 
+
   $subject_code = $_SESSION['subject_code'];
   $subject_name = $_SESSION['subject_name'];
   $mini_atte=0;
@@ -11,39 +11,39 @@
   }
     $toNotifyStudent=array();
   ?>
- 
+
    <hr />
-                <h3 class='h3-responsive'><?php 
+                <h3 class='h3-responsive'><?php
                         // print the no. of classes taken
                         $enroll_no =  $_SESSION['enroll_no'];
-                        $updateClassHappens ="SELECT class_happens_in_a FROM subject_table WHERE tought_by = '{$enroll_no}' AND 
+                        $updateClassHappens ="SELECT class_happens_in_a FROM subject_table WHERE tought_by = '{$enroll_no}' AND
                         subject_code = '{$subject_code}'";
                         if($getResultSet = $dbConnection->query($updateClassHappens)){
                         $getRow = $getResultSet->fetch_object();
                         $classesTaken = $getRow->class_happens_in_a;
-                    
+
                               echo "<h4><b class='blue-text'>".$_SESSION['for_sectionA']."</b><hr />".$_SESSION['subject_name']."<small class='green-text'> <b> (Classes Taken : ".
                                 $classesTaken.")</b></small></h4>";
-                                
-                              
+
+
                              echo "<div class=' blue-text'><b>Select MCT : -</b> <select id='options' style='width:200px' onchange='selectDept(this.value)'>"; $options=0;
                              while($options <= $classesTaken){
                                     echo "<option>".$options."</option>";
                                     $options=$options+1;
                               }
-                                  echo "</select></div><p class='text-muted'>MCT: Minimum Classes Taken</p>";      
-                                 
+                                  echo "</select></div><p class='text-muted'>MCT: Minimum Classes Taken</p>";
+
                       }
 
-                        
+
                 ?></h3>
-                
+
                 <div class='my-2 blue-text'>
                 <p style='font-weight:300;font-size:0.75rem'>Note : Landscape View Sugested.</p>
                 </div>
      <form  >
          <div class='table-responsive' >
-           
+
                 <table class='table table-striped ' >
                 <thead>
                 <tr>
@@ -56,13 +56,13 @@
      <tbody>
 
   <?php
-    
-               $count=0;
+
+               $count=0; $mini_atte-=1;
                 $selectStudentsQuery = "SELECT * FROM {$subject_code} WHERE section = 'A' AND attendance <= {$mini_atte}";
                 $resultSet =$dbConnection->query($selectStudentsQuery);
                //loop
                 while($row = $resultSet->fetch_object()){
-             
+
                   $toNotifyStudent[$count]=$row->enroll_no;$count+=1;
                 ?>
                         <tr>
@@ -73,9 +73,12 @@
                         <td >
                       <b> <?php echo $row->enroll_no;?></b>
                         </td>
-                             
-                        <td class="blue-text"> 
-                        <b> <?php echo $row->attendance;?> </b>
+
+                        <td class="blue-text">
+
+                        <b> <?php
+                               $attendance = $row->attendance+$row->edit;
+                         echo $attendance;?> </b>
                         </td>
 
                         <td> <?php
@@ -83,22 +86,22 @@
                         if($getNameRow = $getNameResultSet->fetch_object()){
                                 echo $getNameRow->username;
                         }
-                        
+
                         ?>   </td>
                         </tr>
 
         <?php
               }
-      
-     
-       $_SESSION['Section']="A";    
+
+
+       $_SESSION['Section']="A";
        $_SESSION['toNotifyStudent']=$toNotifyStudent;
-  ?> 
- </tbody> 
+  ?>
+ </tbody>
    </div>
   </table>
-  <?php 
- If($mini_atte){   ?>           
+  <?php $mini_atte+=1;
+ If($mini_atte){   ?>
  <input type="button" onclick="sendNotification()" value="Notify" class="btn btn-info" />
 
 <?php

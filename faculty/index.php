@@ -104,7 +104,7 @@ $toNotifyStudent=array();
                     <div class="jumbotron row" id="note">
 
                     <div id="myDIV" class="header col-sm-6" >
-                    <h2 class="h2-responsive">Welcome <?php echo  $_SESSION['username'];?>
+                    <h3 class="h3-responsive blue-text">Welcome <?php echo  $_SESSION['username'];?>
 
                     <small>
                      <a id="bell" onclick="showNotification('<?php echo $no;?>')" data-toggle="" title="" data-placement="" >
@@ -115,7 +115,7 @@ $toNotifyStudent=array();
                        ?>
                     </a>
                      </small>
-                    </h2>
+                   </h3>
                      <div id="noti" style="display:none;"><?php echo  $_SESSION['enroll_no'];?></div>
                       <!--notification will be load by ajax-->
                       <div id="showNoti" class="showME"></div>
@@ -135,7 +135,7 @@ $toNotifyStudent=array();
  <br/>
                     <!-- Schedule container -->
                     <div class="jumbotron row" id="schedule">
-                    <h3 class="h-responsive">#Your Schedule</h3><hr />
+                    <h3 class="h3-responsive">#Your Schedule</h3><hr />
                     <center><img src="../img/schedule.jpg"  class="img-responsive" style="height:auto;"> </center>
                     </div>
 
