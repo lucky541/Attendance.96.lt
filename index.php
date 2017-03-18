@@ -413,7 +413,7 @@ onload="myFunction()"
 
    <div class="col-sm-6"><br /></div>
    <div class="col-sm-6 blue z-depth-2 animated best-feature" >  <br />
-        <h3 class="h3-responsive white-text col-sm-2 "><img class="z-depth-1" src="img/icons/quick.png"></h3>
+        <h3 class="h3-responsive white-text col-sm-2 "><img  src="img/icons/quick.png"></h3>
        <p class="white-text col-sm-10">
          <strong class="mark blue-text">Quick</strong>some text will come up here to make this more cool then the previous version in which
        I used the slider to show the usp's of the app.</p>
@@ -480,13 +480,14 @@ onload="myFunction()"
 
                        <div class="white">
                        <h3 class="h3-responsive "><br/><b>Lucky Barkane</b><br /> </h3>
-                        <p class="text-muted lead">Web Developer</p>
+                        <p class="text-muted lead flex-center">Web Developer</p>
 
-                        <a href="https://www.facebook.com/lucky.barkane" target="_blank" class="btn btn-primary">
-                       <i class="fa fa-facebook " ></i> </a>
+                        <a class="nav-link" href="https://www.facebook.com/lucky.barkane"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+                          &nbsp;   &nbsp;
+                          <a class="nav-link" href="https://github.com/lucky541/"> <i class="fa fa-github fa-2x black-text" aria-hidden="true"></i></a>
+                            &nbsp;   &nbsp;
+                        <a class="nav-link" href="https://in.linkedin.com/in/lucky-barkane-793820129"> <i class="fa fa-linkedin-square fa-2x"></i></a>
 
-                         <a href=" https://in.linkedin.com/in/lucky-barkane-793820129" target="_blank" class="btn btn-info">
-                       <i class="fa fa-linkedin " ></i> </a>
 
                        <br/>
              <br/>

@@ -104,9 +104,9 @@ $result = $dbConnection->query("SELECT seen FROM feedback WHERE seen =0");
                   <div class="jumbotron row" id="faculty">
                   <h3 class="h3-responsive">#Faculty</h3>
                    <hr />
-                   <div class="col-sm-1"></div>
+
                   <!--Panel1-->
-                  <div class="card col-sm-4 hoverable">
+                  <div class="card  hoverable">
                   <h3 class="card-header primary-color white-text">Faculty Details</h3>
                   <div class="card-block">
                   <h4 class="card-title">Faculty Details</h4>
@@ -115,9 +115,9 @@ $result = $dbConnection->query("SELECT seen FROM feedback WHERE seen =0");
                   </div>
                   </div>
                   <!--/.Panel-->
-                  <div class="col-sm-1"></div>
+
                   <!--Panel2-->
-                  <div class="card col-sm-4 hoverable">
+                  <div class="card hoverable">
                   <h3 class="card-header info-color white-text ">Add Faculty</h3>
                   <div class="card-block">
                   <h4 class="card-title">To Add New Faculty</h4>
@@ -126,9 +126,6 @@ $result = $dbConnection->query("SELECT seen FROM feedback WHERE seen =0");
                   </div>
                   </div>
                   <!--/.Panel-->
-
-                    <div class="col-sm-1"></div>
-
               </div>
     <hr />
  <br/>

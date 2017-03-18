@@ -50,8 +50,8 @@ addSideNav($sideNavArray,'index.php');
      <br /> <hr /> <br />
         <div class="col-md-11 jumbotron col-sm-4"  >
                  <div class="team container col-sm-3" >
-                      		   <div class="team-player text-xs-center" >
-			                        <img src="../img/ams/<?php echo $_GET['facultyName'];?>.jpg" alt="Thumbnail Image" class="img-raised img-circle">
+                      		   <div class="text-xs-center" >
+			                        <img style="max-width:200px; height:auto;" src="../img/ams/<?php echo $_GET['facultyName'];?>.jpg" alt="faculty_pic" class="img-raised img-circle">
 			                        <h4 class="title">Faculty Name<br />
 										<small class="text-muted">Professor</small>
 									</h4>
