@@ -28,15 +28,14 @@
   <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
 
-
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">
 
-    <!-- Your custom styles (optional) -->
-    <link href="css/index.css" rel="stylesheet">
+    <!-- Your custom styles (optional)
+    <link href="css/index.css" rel="stylesheet"> -->
     <style>
          body{
           position: relative;
@@ -49,7 +48,7 @@
          } #best-features{
              padding-top:5px;
          } #team{
-             padding-top:30px;
+             padding-top:50px;
          }#contact{
              padding-top:20px;
          }
@@ -89,6 +88,7 @@
     background-size:contain;
     background-position:center;
     }
+
 
 }
 /* for backgound img Ends*/
@@ -398,16 +398,14 @@ onload="myFunction()"
      <br />
        <h3 class="h3-responsive white-text col-sm-2"><img src="img/icons/smartphone.png"></h4>
        <p class="white-text col-sm-10">
-         <strong class="mark blue-text">Resposive</strong> come up here to make this more cool then the previous version in which
-       I used the slider to show the usp's of the app.</p>
+         <strong class="mark blue-text">Resposive</strong> &nbsp; access and manage the attendance across any platform of your choice.</p>
    </div>
 
    <div class="col-sm-6 "><br /></div>
   <div class="col-sm-6 pink  z-depth-2 animated  best-feature" >  <br />
        <h3 class="h3-responsive white-text col-sm-2"><img src="img/icons/realtime.png"></h3>
        <p class="white-text col-sm-10">
-         <strong class="mark blue-text">Real Time System</strong>some text will come up here to make this more cool then the previous version in which
-       I used the slider to show the usp's of the app.</p>
+         <strong class="mark blue-text">Easy</strong> &nbsp; no pre-requisites...just browse once and you are ready to go.</p>
    </div>
 
 
@@ -415,17 +413,15 @@ onload="myFunction()"
    <div class="col-sm-6 blue z-depth-2 animated best-feature" >  <br />
         <h3 class="h3-responsive white-text col-sm-2 "><img  src="img/icons/quick.png"></h3>
        <p class="white-text col-sm-10">
-         <strong class="mark blue-text">Quick</strong>some text will come up here to make this more cool then the previous version in which
-       I used the slider to show the usp's of the app.</p>
+         <strong class="mark blue-text">Quick</strong> &nbsp; no more time consuming and no more hard wrok needed....just the smart work.</p>
    </div>
 
 
    <div class="col-sm-6"><br /></div>
-   <div class="col-sm-6 red  z-depth-2 animated best-feature " >  <br />
+   <div class="col-sm-6 green  z-depth-2 animated best-feature " >  <br />
         <h3 class="h3-responsive white-text col-sm-2"><img src="img/icons/paper.png"></h3>
        <p class="white-text col-sm-10">
-         <strong class="mark blue-text">Paperless</strong>some text will come up here to make this more cool then the previous version in which
-       I used the slider to show the usp's of the app.</p>
+         <strong class="mark blue-text">Paperless</strong> &nbsp; go eco friendly go online..!</p>
    </div>
 
 </div><!-- container for Best Features Ends-->
@@ -463,45 +459,113 @@ onload="myFunction()"
 </div><!-- About us container ends here-->
 
 
+
+<div class="container">
 <div class="divider-new animated fadeIn content" id="team">
         <h2 class="h2-responsive wow fadeInDown">AMS Team</h2>
  </div>
-<div class="view animated fadeIn teamContent"  >
-<!--      <!-- container for Team-->
 
-          <div class="team container">
-                       <center>
-                      <div class="float-xs-center card" style="max-width: 300px;">
+      <div class="col-md-4 animated slideInUp">
+          <!--Card-->
+          <div class="card z-depth-2 card-cascade wider">
 
-                      <div class="">
-                      <img class="team_pic z-depth-2"  src="img/lucky.jpg" alt="Lucky Barkane" >
-                      <br >
-                      </div>
+              <!--Card image-->
+              <div class="view overlay hm-white-slight z-depth-2">
+                  <img src="img/Alay.jpg" class="img-fluid ">
+                  <a href="#!">
+                      <div class="mask waves-effect waves-light"></div>
+                  </a>
+              </div>
+              <!--/Card image-->
 
-                       <div class="white">
-                       <h3 class="h3-responsive "><br/><b>Lucky Barkane</b><br /> </h3>
-                        <p class="text-muted lead flex-center">Web Developer</p>
+              <!--Card content--><center>
+              <div class="card-block ">
+                  <!--Title-->
+                  <h4 class="card-title"><strong>Alay Bohra</strong></h4>
+                  <h5>DB Designer</h5>
 
-                        <a class="nav-link" href="https://www.facebook.com/lucky.barkane"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
-                          &nbsp;   &nbsp;
-                          <a class="nav-link" href="https://github.com/lucky541/"> <i class="fa fa-github fa-2x black-text" aria-hidden="true"></i></a>
+                   <hr />
+                  <a class="nav-link" href="https://www.facebook.com/alay.149489"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+                                &nbsp;   &nbsp;
+                               <a class="nav-link" href="#"> <i class="fa fa-github fa-2x black-text" aria-hidden="true"></i></a>
                             &nbsp;   &nbsp;
-                        <a class="nav-link" href="https://in.linkedin.com/in/lucky-barkane-793820129"> <i class="fa fa-linkedin-square fa-2x"></i></a>
+                              <a class="nav-link" href="https://www.facebook.com/alay.149489"> <i class="fa fa-linkedin-square fa-2x"></i></a>
 
-
-                       <br/>
-             <br/>
-                      <!--
-                      <p>You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a href="#">links</a> for people to be able to follow them outside the site.</p>
-                      -->
-
-                      </div>
-                      </div>
-                   </center>
+              </div></center>
+              <!--/.Card content-->
 
           </div>
-</div> <!-- Team container ends here-->
+          <!--/.Card-->
+      </div>
 
+     <div class="col-md-4 animated slideInUp ">
+          <!--Card-->
+          <div class="card z-depth-2 card-cascade wider">
+
+              <!--Card image-->
+              <div class="view overlay hm-white-slight z-depth-2">
+                  <img src="img/lucky.jpg" class="img-fluid ">
+                  <a href="#!">
+                      <div class="mask waves-effect waves-light"></div>
+                  </a>
+              </div>
+              <!--/Card image-->
+
+              <!--Card content--><center>
+              <div class="card-block ">
+                  <!--Title-->
+                  <h4 class="card-title"><strong>Lucky Barkane</strong></h4>
+                  <h5>Web Developer</h5>
+
+                   <hr />
+               <a class="nav-link" href="https://www.facebook.com/lucky.barkane"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+                          &nbsp;   &nbsp;
+              <a class="nav-link" href="https://github.com/lucky541/"> <i class="fa fa-github fa-2x black-text" aria-hidden="true"></i></a>
+                            &nbsp;   &nbsp;
+              <a class="nav-link" href="https://in.linkedin.com/in/lucky-barkane-793820129"> <i class="fa fa-linkedin-square fa-2x"></i></a>
+
+
+              </div></center>
+              <!--/.Card content-->
+
+          </div>
+          <!--/.Card-->
+      </div>
+
+       <div class="col-md-4 animated slideInUp">
+          <!--Card-->
+          <div class="card z-depth-2 card-cascade wider">
+
+              <!--Card image-->
+              <div class="view overlay hm-white-slight z-depth-2">
+                  <img src="img/nikhil.jpg" class="img-fluid ">
+                  <a href="#!">
+                      <div class="mask waves-effect waves-light"></div>
+                  </a>
+              </div>
+              <!--/Card image-->
+
+              <!--Card content--><center>
+              <div class="card-block ">
+                  <!--Title-->
+                  <h4 class="card-title"><strong>Nikhil Dubey</strong></h4>
+                  <h5>Documentation</h5>
+
+                  <hr />
+                  <a class="nav-link" href="#"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+                                &nbsp;   &nbsp;
+                             <a class="nav-link" href="#"> <i class="fa fa-github fa-2x black-text" aria-hidden="true"></i></a>
+                            &nbsp;   &nbsp;
+                              <a class="nav-link" href="#"> <i class="fa fa-linkedin-square fa-2x"></i></a>
+
+              </div></center>
+              <!--/.Card content-->
+
+          </div>
+          <!--/.Card-->
+      </div>
+
+</div><!-- team container -->
 
 <!-- container for Contact us-->
 <div class="container-fluid animated fadeIn content" id="contact">
@@ -510,7 +574,7 @@ onload="myFunction()"
         <h2 class="h2-responsive wow fadeInDown ">Contact Us</h2>
     </div>
           <!-- contact form stats -->
-          <div class="col-md-8 animated fadeIn ">
+          <div class="col-md-6 animated fadeIn ">
                                 <!--Form-->
                                 <form action="sendMessage.php" method="post">
                                 <div class="card wow fadeInRight ">
@@ -552,16 +616,13 @@ onload="myFunction()"
 
 
                             <!--Second column-->
-                        <div class="col-md-4 wow fadeIn card">
-                          <div class="card-block">
-                          <!--Header-->
+                        <div class="col-md-6 wow fadeIn card">
+
                           <div class="text-xs-left">
-                            <br/>  <h3 class="h3-responsive blue-text">IET-DAVV, Indore(452001)</h3><hr/></div>
-
-
-                            <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus modi sint accusantium earum, quisquam dolore odit cumque magnam temporibus blanditiis, nostrum voluptas perferendis, iusto repellendus error corporis ex totam voluptatem.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus modi sint accusantium earum, quisquam dolore odit cumque magnam temporibus blanditiis, nostrum voluptas perferendis, iusto repellendus error corporis ex totam voluptatem.</p>
-                        </div>
+                            <br/>  <h3 class="h3-responsive blue-text">IET-DAVV, Indore.</h3><hr/></div>
+                            <!--Map container-->
+                            <div id="map-container" class="z-depth-1 wow fadeInUp" style="height: 350px"></div>
+                          <br />
                         </div>
                         <!--/Second column-->
 
@@ -607,7 +668,9 @@ onload="myFunction()"
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
 
-
+    <!--Google Maps-->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDx1qtCMLkyphikiI8ggXfyU3P6qIkz3BM&callback=initMap"
+ type="text/javascript"></script>
 
 
   <script>
@@ -652,6 +715,29 @@ onload="myFunction()"
     } // End if
   });
 
+//map
+  function init_map() {
+             var var_location = new google.maps.LatLng(22.681307, 75.878746);
+
+             var var_mapoptions = {
+                 center: var_location,
+                 zoom: 16
+             };
+
+             var var_marker = new google.maps.Marker({
+                 position: var_location,
+                 map: var_map,
+                 title: "New York"
+             });
+
+             var var_map = new google.maps.Map(document.getElementById("map-container"),
+                 var_mapoptions);
+
+             var_marker.setMap(var_map);
+
+         }
+
+         google.maps.event.addDomListener(window, 'load', init_map);
 });
 
 $('.forLogin').focus(function(){

@@ -48,17 +48,25 @@
                 <thead>
                 <tr>
                 <th>S.N.</th>
-                <th>Roll No.</th>
-                <th class='red-text'>Attendance<?php echo '<='.$mini_atte;?></th>
-                <th>First Name</th>
+                <th>Enroll_No.</th>
+                <th class='red-text'>Atten.<?php echo '<'.$mini_atte;?></th>
+                <th>Name</th>
                </tr>
                 </thead>
      <tbody>
 
   <?php
 
-               $count=0; $mini_atte-=1;
-                $selectStudentsQuery = "SELECT * FROM {$subject_code} WHERE section = 'A' AND attendance <= {$mini_atte}";
+               $count=0;
+                if($result= $dbConnection->query("SELECT * FROM {$subject_code} WHERE section = 'A'")) {
+                   while ($row = $result->fetch_object()) {
+                       $attendance = $row->attendance + $row->edit;
+                       $enroll_no= $row->enroll_no;
+                      // echo $row->enroll_no.' -> '.$attendance.'<br />';
+                      $dbConnection->query("UPDATE {$subject_code} SET attendance = {$attendance},edit=0 WHERE enroll_no = '{$enroll_no}' AND section = 'A'");
+                   }
+                }
+                $selectStudentsQuery = "SELECT * FROM {$subject_code} WHERE section = 'A' AND attendance < {$mini_atte}";
                 $resultSet =$dbConnection->query($selectStudentsQuery);
                //loop
                 while($row = $resultSet->fetch_object()){
@@ -100,7 +108,7 @@
  </tbody>
    </div>
   </table>
-  <?php $mini_atte+=1;
+  <?php 
  If($mini_atte){   ?>
  <input type="button" onclick="sendNotification()" value="Notify" class="btn btn-info" />
 

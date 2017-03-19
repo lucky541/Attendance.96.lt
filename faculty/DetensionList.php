@@ -52,8 +52,8 @@ addSideNav($sideNavArray,'index.php');
     <br/>
 <div class="col-sm-10">
     <div class="jumbotron ">
-    <h3 class="h2-responsive" id="Detention"><b>#Detention List</b></h3>
-    <br />
+    <h3 class="h3-responsive" id="Detention"><b>#Detention List</b></h3>
+    <hr />
 
     <!-- CLASS LIST WILL COME IN THIS DIV-->
     <div id="selectClassList" class="row"></div>
