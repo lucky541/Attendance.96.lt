@@ -1,4 +1,3 @@
-
 <?php
 include '../sideNav.php';
 include '../Bootstrap.php';
@@ -22,7 +21,6 @@ include '../Bootstrap.php';
 <link rel="stylesheet" href="../css/w3Css.css">
 
  <style>
-
           /* The snackbar - position it at the bottom and in the middle of the screen */
 #snackbar {
     visibility: hidden; /* Hidden by default. Visible on click */
@@ -38,33 +36,27 @@ include '../Bootstrap.php';
     left: 50%; /* Center the snackbar */
     bottom: 30px; /* 30px from the bottom */
 }
-
 /* Show the snackbar when clicking on a button (class added with JavaScript) */
 #snackbar.show {
     visibility: visible; /* Show the snackbar */
-
 /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
 However, delay the fade out process for 2.5 seconds */
     -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
     animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
-
 /* Animations to fade the snackbar in and out */
 @-webkit-keyframes fadein {
     from {bottom: 0; opacity: 0;}
     to {bottom: 30px; opacity: 1;}
 }
-
 @keyframes fadein {
     from {bottom: 0; opacity: 0;}
     to {bottom: 30px; opacity: 1;}
 }
-
 @-webkit-keyframes fadeout {
     from {bottom: 30px; opacity: 1;}
     to {bottom: 0; opacity: 0;}
 }
-
 @keyframes fadeout {
     from {bottom: 30px; opacity: 1;}
     to {bottom: 0; opacity: 0;}
@@ -77,7 +69,6 @@ However, delay the fade out process for 2.5 seconds */
     border-radius: 25px;
     background-color: #f1f1f1;
 }
-
 .chip img {
     float: left;
     margin: 0 10px 0 -25px;
@@ -85,7 +76,6 @@ However, delay the fade out process for 2.5 seconds */
     width: 50px;
     border-radius: 50%;
 }
-
         </style>
 
 
@@ -171,7 +161,6 @@ addSideNav($sideNavArray,'index.php');
   margin: 5px;
   padding: 10px;
     max-width: 350px;
-
 ">
 
 </div>
@@ -185,28 +174,19 @@ addSideNav($sideNavArray,'index.php');
 ?>
 
           <script>
-
-
 $(document).ready(function(){
   loadThisToo();
   closeStudentDetailes();
-
 });
-
-
-
 function studenDetailes(enroll,attendance,name){
   //alert(enroll + " " + attendance +" "+name);
     LoadByAjax('studenDetailesDiv','popover.php?enroll='+enroll+'&attendance='+attendance+'&name='+name);
      $('#studenDetailesDiv').show();
-
    }
   function closeStudentDetailes(){
     $('#studenDetailesDiv').hide();
   }
-
 function loadThisToo(){
-
           LoadByAjax('selectClassList','files.php');
 }
 var section;
@@ -214,31 +194,25 @@ var section;
      this.section=section;
        LoadByAjax('loadTable','Section_A.php?value=checked');
  }
-
  function loadTableForSectionB(section){
        this.section=section;
        LoadByAjax('loadTable','Section_B.php?value=checked');
-
  }
-
 function callEditAttendance(section){
  // alert(section);
   LoadByAjax('loadTable','editAttendance.php?section='+section);
 }
-
 function viewAttendance(section){
   //alert('viewAttendance()')
   LoadByAjax('loadTable','ViewAttendance.php?section='+section);
 }
  function LoadByAjax(divID,fileName){
-
   var xmlHttp = new XMLHttpRequest();
   xmlHttp.onreadystatechange = function(){
                if(xmlHttp.readyState == 4 && xmlHttp.status==200){
                    document.getElementById(divID).innerHTML = xmlHttp.responseText;
                }
            };
-
            xmlHttp.open('GET',fileName,true);
            xmlHttp.send();
  }
@@ -249,7 +223,6 @@ function CheckboForSectionA(){
     var c=document.getElementById('checkbox0');
   if (c.checked) {
    LoadByAjax('loadTable','Section_A.php?value=checked');
-
   } else {
   LoadByAjax('loadTable','Section_A.php?value=unchecked');
   }
@@ -258,13 +231,10 @@ function CheckboForSectionA(){
     var c=document.getElementById('checkbox0');
   if (c.checked) {
    LoadByAjax('loadTable','Section_B.php?value=checked');
-
   } else {
   LoadByAjax('loadTable','Section_B.php?value=unchecked');
   }
 }
-
-
   </script>
  </body>
 </html>

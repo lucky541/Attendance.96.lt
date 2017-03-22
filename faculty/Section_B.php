@@ -2,7 +2,6 @@
    error_reporting(0);
   require '../db/connection.php';
   session_start();
-
   $subject_code = $_SESSION['subject_code'];
   $subject_name = $_SESSION['subject_name'];
   $defChekbox= $_GET['value'];
@@ -17,7 +16,6 @@
                         if($getResultSet = $dbConnection->query($updateClassHappens)){
                         $getRow = $getResultSet->fetch_object();
                         $classesTaken = $getRow->class_happens_in_b;
-
                  echo "<h4 class='blue-text'><b>".$_SESSION['for_sectionB']."</b><hr />(".$subject_code.") : ".$_SESSION['subject_name'].
                  "<br /><small class='text-muted'> <b> (Class's Taken : ".
                                 $classesTaken.")</b> Last class was taken on <b>".$getRow->b_date.
@@ -25,7 +23,6 @@
                                 $b_date=$getRow->b_date;
                                 $editFlag=$getRow->edit_flag_for_B;
                                  }
-
                   // this is to check to enable or disable the edit button
                  if($b_date!=$date)
                    {
@@ -56,13 +53,11 @@
                           <tbody>
 
   <?php
-
                 $numberOfStudents=0;
                 $selectStudentsQuery = "SELECT * FROM {$subject_code} WHERE section = 'B'";
                 $resultSet =$dbConnection->query($selectStudentsQuery);
                 while($row = $resultSet->fetch_object()){
                 $numberOfStudents+=1;
-
                 ?>
                        <?php
                             if($editAttendance=$row->edit){
@@ -70,7 +65,6 @@
                            }else{
                              $attendance=$row->attendance;
                             }
-
                              $getNameResultSet = $dbConnection->query("SELECT username FROM valid_users_list WHERE enroll_no = '{$row->enroll_no}'");
                          if($getNameRow = $getNameResultSet->fetch_object()){
                                $getNameRow->username;
@@ -110,31 +104,25 @@
                         if($getNameRow = $getNameResultSet->fetch_object()){
                                 echo $getNameRow->username;
                         }
-
                         ?>   </td>
                         </tr>
 
         <?php
               $numberOfStudents+=1;
               }
-
       $_SESSION['numberOfStudents']=$numberOfStudents;
        $_SESSION['Section']="B";
-
   ?>
  </tbody>
    </div>
   </table>
 <?php
-
      echo '<input type="submit" onclick="callAlert()"  class="btn btn-unique wave-effect" value="Submit" />';
    }
-
     if( !$editFlag && $date==$b_date)
       {
          echo "<a class='btn btn-blue-grey wave-effect' onclick='callEditAttendance(`B`)'>Edit Attendance</a>";
       }
-
       if($date==$b_date)
        echo '<input type="button" onclick="viewAttendance(`B`)"  class="btn btn-mdb wave-effect" value="View Attendance" />';
 ?>

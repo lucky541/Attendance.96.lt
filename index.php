@@ -230,7 +230,7 @@ onload="myFunction()"
 
                         <div class=" font_white" style="margin-top:0px;">
                               <!--First column-->
-                           <div class=" animated swing">
+                           <div class=" animated flipInY">
                               <img src="img/ams/amsgif51.gif"  class="imgResponsive z-depth-2 " />
                             </div>
 
@@ -239,7 +239,7 @@ onload="myFunction()"
                                <center>
                                  <hr>
                                  <div id ="tagline" class="lead white-text fadeInLeft " data-wow-delay="0.4s" >
-                                    The Better Towards The Attendance System.
+                                    Manage Attendance Better.
                                 </div>
                                </center> </div>
 
@@ -390,7 +390,7 @@ onload="myFunction()"
         <h2 class="h2-responsive wow fadeInDown">Best Features of AMS</h2>
     </div>
 
-   <div class="col-sm-6 animated" id="amsMobile">
+   <div class="col-sm-6 animated " id="amsMobile">
      <img style="max-width: 100%; height: auto; max-height: 550px; " src="img/amsMobile.jpg" alt="amsMobile" />
    </div>
 
@@ -398,7 +398,7 @@ onload="myFunction()"
      <br />
        <h3 class="h3-responsive white-text col-sm-2"><img src="img/icons/smartphone.png"></h4>
        <p class="white-text col-sm-10">
-         <strong class="mark blue-text">Resposive</strong> &nbsp; access and manage the attendance across any platform of your choice.</p>
+         <strong class="mark blue-text">Responsive</strong> &nbsp; access and manage the attendance across any platform of your choice.</p>
    </div>
 
    <div class="col-sm-6 "><br /></div>
@@ -413,7 +413,7 @@ onload="myFunction()"
    <div class="col-sm-6 blue z-depth-2 animated best-feature" >  <br />
         <h3 class="h3-responsive white-text col-sm-2 "><img  src="img/icons/quick.png"></h3>
        <p class="white-text col-sm-10">
-         <strong class="mark blue-text">Quick</strong> &nbsp; no more time consuming and no more hard wrok needed....just the smart work.</p>
+         <strong class="mark blue-text">Quick</strong> &nbsp; no more time consuming and no more hard-work needed....just the smart work.</p>
    </div>
 
 
@@ -436,12 +436,14 @@ onload="myFunction()"
     </div>
 
                       <!--First column-->
-                        <div class="col-md-12 wow aboutContent"  >
-                            <h2 class="h2-responsive">Why is it so great?</h2>
-                            <hr>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus modi sint accusantium earum, quisquam dolore odit cumque magnam temporibus blanditiis, nostrum voluptas perferendis, iusto repellendus error corporis ex totam voluptatem.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus modi sint accusantium earum, quisquam dolore odit cumque magnam temporibus blanditiis, nostrum voluptas perferendis, iusto repellendus error corporis ex totam voluptatem.</p>
-                        </div>
+                        <div class="col-md-12 wow aboutContent text-xs-center"  >
+                            <p>The Institute of Engineering & Technology, commonly referred to as IET, is an engineering branch of Devi Ahilya Vishwavidyalaya. The college was founded as an autonomous institute in 1996. It is located near the Takshashila campus of the university on Khandwa Road in the south-east of Indore, Madhya Pradesh, India.
+                            </p>
+                            <p>IET offers undergraduate and graduate engineering programs in more than five disciplines along with hosting research labs and student outreach programs.
+                            Recently IET DAVV was ranked 34th in all India ranking of best Engineering colleges By "Pick a College" an Initiative by Digit Magazine.</p>
+                            <small>For more details visit : <a href="http://www.ietdavv.edu.in/"  target="_blank">www.ietdavv.edu.in</a></small>
+                            <hr />
+                          </div>
                         <!--/First column-->
 
         <!--Watch us div -->
@@ -552,11 +554,11 @@ onload="myFunction()"
                   <h5>Documentation</h5>
 
                   <hr />
-                  <a class="nav-link" href="#"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+                  <a class="nav-link" href="https://www.facebook.com/nikhil.dubey.75839"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
                                 &nbsp;   &nbsp;
-                             <a class="nav-link" href="#"> <i class="fa fa-github fa-2x black-text" aria-hidden="true"></i></a>
+                             <a class="nav-link" href="https://www.facebook.com/nikhil.dubey.75839"> <i class="fa fa-github fa-2x black-text" aria-hidden="true"></i></a>
                             &nbsp;   &nbsp;
-                              <a class="nav-link" href="#"> <i class="fa fa-linkedin-square fa-2x"></i></a>
+                              <a class="nav-link" href="https://www.facebook.com/nikhil.dubey.75839"> <i class="fa fa-linkedin-square fa-2x"></i></a>
 
               </div></center>
               <!--/.Card content-->
@@ -581,7 +583,7 @@ onload="myFunction()"
                                     <div class="card-block">
                                         <!--Header-->
                                         <div class="text-xs-left">
-                                          <br/>  <h3 class="h3-responsive blue-text">Sends Comment </h3><hr/></div>
+                                          <br/>  <h3 class="h3-responsive blue-text">Contact Form</h3><hr/></div>
 
 
                                         <!--Body-->
@@ -619,7 +621,7 @@ onload="myFunction()"
                         <div class="col-md-6 wow fadeIn card">
 
                           <div class="text-xs-left">
-                            <br/>  <h3 class="h3-responsive blue-text">IET-DAVV, Indore.</h3><hr/></div>
+                            <br/>  <h3 class="h3-responsive blue-text">IET-DAVV, Indore(MP)</h3><hr/></div>
                             <!--Map container-->
                             <div id="map-container" class="z-depth-1 wow fadeInUp" style="height: 350px"></div>
                           <br />
