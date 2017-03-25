@@ -112,7 +112,7 @@
    </div>
   </table>
 <?php
-     echo '<input type="submit" onclick="callAlert()"  class="btn btn-unique wave-effect" value="Submit" />';
+     echo '<input type="submit" onclick="callAlert()"  class="btn btn-info wave-effect" value="Submit" />';
    }
     if( !$editFlag && $date==$a_date)
       {

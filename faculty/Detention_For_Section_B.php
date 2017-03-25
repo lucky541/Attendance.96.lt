@@ -22,7 +22,7 @@
                         $getRow = $getResultSet->fetch_object();
                         $classesTaken = $getRow->class_happens_in_b;
 
-                              echo "<h4><b class='blue-text'>".$_SESSION['for_sectionB']."</b><hr />".$_SESSION['subject_name']."<small class='green-text'> <b> (Classes Taken : ".
+                              echo "<h4><b class='red-text'>".$_SESSION['for_sectionB']."</b><hr />".$_SESSION['subject_name']."<small class='green-text'> <b> (Classes Taken : ".
                                 $classesTaken.")</b></small></h4>";
 
 
@@ -47,10 +47,10 @@
                 <table class='table table-striped ' >
                 <thead>
                 <tr>
-                  <th>S.N.</th>
-                  <th>Enroll_No.</th>
-                  <th class='red-text'>Atten.<?php echo '<'.$mini_atte;?></th>
-                  <th>Name</th>
+                <th>S.N.</th>
+                <th>Roll No.</th>
+                <th class='red-text'>Atten.<?php echo '<'.$mini_atte;?></th>
+                <th>First Name</th>
                </tr>
                 </thead>
      <tbody>
@@ -107,7 +107,7 @@
  </tbody>
    </div>
   </table>
- <?php
+ <?php 
    if($mini_atte){    ?>
  <input type="button" onclick="sendNotification()" value="Notify" class="btn btn-primary" />
 

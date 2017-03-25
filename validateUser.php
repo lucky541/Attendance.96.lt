@@ -7,8 +7,8 @@ if( isset($_POST['input_username']) && isset($_POST['input_password']) ){
     $input_username = $_POST['input_username'];
     $input_password = $_POST['input_password'];
 
-    if($stmt = $dbConnection->prepare("SELECT username,enroll_no,department,role,studing_year,section,semester FROM valid_users_list WHERE enroll_no =?
-                         AND password = ?")){
+    if($stmt = $dbConnection->prepare("SELECT username,enroll_no,department,role,studing_year,section,semester FROM valid_users_list WHERE BINARY enroll_no =?
+                         AND BINARY password = ?")){
 
     $stmt->bind_param('ss',$input_username,$input_password);
     $stmt->execute();
@@ -37,7 +37,9 @@ if( isset($_POST['input_username']) && isset($_POST['input_password']) ){
       header('Location: admin/index.php');
      }
 
-  }
+  }else{
+ header("Location: index.php?message=not vallid");
+}
 }
 else{
  header("Location: index.php?message=not vallid");

@@ -23,7 +23,7 @@ background: url("http://smashingyolo.com/wp-content/uploads/2014/05/Best-Website
 }
 </style>
    <!-- Side navigation starts form here-->
-<nav class="w3-sidenav bg  w3-collapse w3-white w3-card-2 w3-animate-left sidenav z-depth-5" style="width:240px;  z-index:10000;" id="mySidenav">
+<nav class="w3-sidenav bg animated  w3-collapse w3-white w3-card-2 w3-animate-left sidenav z-depth-5" style="width:240px;  z-index:10000;" id="mySidenav">
 
 
   <!-- side nav before logo add some style-->
@@ -60,8 +60,8 @@ background: url("http://smashingyolo.com/wp-content/uploads/2014/05/Best-Website
 <div class="w3-main" id="sidePage" style="margin-left:310px;" >
 
         <!-- hamburger icon starts-->
-        <header class="w3-container navbar-fixed-top Add-box-shadow" style=" background:transparent; width: 50px;" id="ham">
-        <span id="Hamburg" class="w3-opennav w3-xlarge w3-hide-large" onclick="w3_open()"><img src="../img/icons/menu2.png"></span>
+        <header class="w3-container navbar-fixed-top z-depth-2 blue" style=" background:; width: 50px; padding:5px; padding-top:0px;" id="ham">
+        <span id="Hamburg" class="  w3-opennav w3-xlarge w3-hide-large" onclick="w3_open()"><img src="../img/icons/menu2.png"></span>
         </header>
         <!-- hamburger icon starts-->
 
