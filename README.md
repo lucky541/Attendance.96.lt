@@ -1,5 +1,6 @@
 # Attendance.96.lt
 - AMS stands for Attendance Management System. It facilate the overhead in talking attendance Schools/Collage.
+- Tools: PHP, Bootstrap, Ajax, JQuery.
 - Team:Lucky Barkane, Alay Bohra, Nikhil Dubey.
 - Created in 2017
 - Screenshot
